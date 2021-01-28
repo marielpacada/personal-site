@@ -1,10 +1,10 @@
 #intro {
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-family: "montserrat", sans-serif;
 }
 
 #name {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-family: "montserrat-regular", sans-serif;
 }
 
@@ -25,21 +25,16 @@ html, body {
 }
 
 #penguin {
-    height: 10rem;
+    height: 8rem;
     width: auto;
-    padding-left: 4rem;
     padding-top: 1rem;
 }
 
 .nav-item {
     font-family: "montserrat-regular", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     padding-left: 1rem;
     padding-right: 1rem;
-}
-
-#page-links {
-    padding-right: 3rem;   
 }
 
 li>a {
@@ -70,7 +65,7 @@ li>a:hover::before {
     transform: scaleX(1);
 }
 
-#color-block-inner { 
+#color-block-inner {
     height: 70%;
     width: 35%;
     background-color: #8EC2F6;
@@ -78,7 +73,7 @@ li>a:hover::before {
     margin-left: 5rem;
 }
 
-#color-block-outer { 
+#color-block-outer {
     height: 50%;
     width: 25%;
     background-color: #B4D7F9;
@@ -88,14 +83,51 @@ li>a:hover::before {
     box-shadow: -10px 10px 5px #3F4050;
 }
 
-#nav { 
+#nav {
     background-color: #FBF6EF;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
-#typewriters { 
-    position: fixed;
-    height: 70%;
-    width: 45%;
-    margin-left: 45rem;
-    padding-top: 3.35rem;
+#page-links {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 825px) {
+    #nav {
+        flex-direction: column;
+    }
+}
+
+#typewriters {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 50%;
+    height: auto;
+    padding-bottom: 10rem;
+}
+
+
+#color-block { 
+    height: 35rem;
+    width: auto;
+}
+
+#landing { 
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #FBF6EF;
+
 }

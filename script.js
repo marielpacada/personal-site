@@ -8,8 +8,7 @@ function typeIntro() {
     typewriter.start();
     typewriter.typeString("hey, my name is ...");
 
-    // setTimeout(() => { this.typeDesc(); }, 2500);
-    typewriter.pauseFor(1800);
+    typewriter.pauseFor(1500);
     typewriter.deleteChars(3);
     typewriter.typeString(" ariel?");
     typewriter.pauseFor(1800);
