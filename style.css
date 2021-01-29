@@ -214,7 +214,7 @@ li>a:hover::before {
     background-color: #CC8B8C;
 }
 
-.category.research {
+.category.machine {
     background-color: #1D7BC3;
 }
 
@@ -234,8 +234,8 @@ li>a:hover::before {
     content: "design";
 }
 
-.research::after {
-    content: "research";
+.machine::after {
+    content: "machine learning";
 }
 
 .data::after {
@@ -254,7 +254,9 @@ li>a:hover::before {
     padding-bottom: 1rem;
 }
 
-#foot-about { 
+#foot-short { 
     padding-top: 2rem;
-    padding-bottom: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
