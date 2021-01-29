@@ -113,21 +113,107 @@ li>a:hover::before {
     padding-bottom: 10rem;
 }
 
-
-#color-block { 
+#color-block {
     height: 35rem;
     width: auto;
 }
 
-#landing { 
+.section-body {
     padding-top: 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
     background-color: #FBF6EF;
+}
 
+#about-text {
+    width: 40%;
+    font-size: 18px;
+    font-family: "montserrat-regular", sans-serif;
+}
+
+#headshot {
+    width: 30%;
+    height: auto;
+    box-shadow: 20px 20px #B4D7F9;
+}
+
+#test { 
+    height: 20rem;
+    width: 40%;
+    background-color:skyblue;
+    align-self: center;
+    margin-left: 5rem;
+    box-shadow: -20px 20px gray; /* make this blurry */
+}
+
+.project-box:hover { 
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.project-box { 
+    width: 30rem;
+    height: 35%;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.project-photo { 
+    width: 30rem;
+    height: auto;
+}
+
+.project-desc { 
+    padding: 1rem 1.5rem .5rem 1.5rem;
+}
+.category { 
+    color: white;
+    height: auto;
+    width: auto;
+    padding: .2rem .5rem .2rem .5rem;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: small;
+    border-radius: 18px;
+    margin-right: .5rem;
+}
+
+.category.development { 
+    background-color: #CC8B8C;
+}
+
+.development:after { 
+    content: "development";
+}
+
+.design:after { 
+    content: "design";
+}
+
+.category.design { 
+    background-color: #907F9F;
+}
+
+.project-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: -0.8rem;
+}
+
+.project-title { 
+    font-family: "montserrat", sans-serif;
+    font-size: 2rem;
+    margin-bottom: .3rem;
+}
+
+.blurb { 
+    font-family: "montserrat-regular";
+    padding-top: .5rem;
 }

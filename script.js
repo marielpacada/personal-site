@@ -13,7 +13,7 @@ function typeIntro() {
     typewriter.typeString(" ariel?");
     typewriter.pauseFor(1800);
     typewriter.deleteChars(6);
-    typewriter.typeString("mariel •ᴗ•");
+    typewriter.typeString("mariel!");
 }
 
 function typeDesc() {
