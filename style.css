@@ -123,7 +123,7 @@ li>a:hover::before {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
     padding-left: 3rem;
     padding-right: 3rem;
@@ -142,36 +142,34 @@ li>a:hover::before {
     box-shadow: 20px 20px #B4D7F9;
 }
 
-#test { 
+#test {
     height: 20rem;
     width: 40%;
-    background-color:skyblue;
+    background-color: skyblue;
     align-self: center;
     margin-left: 5rem;
-    box-shadow: -20px 20px gray; /* make this blurry */
+    box-shadow: -20px 20px gray;
+    /* make this blurry */
 }
 
-.project-box:hover { 
-  transform: scale(1.03);
-  cursor: pointer;
+.project-box:hover {
+    transform: scale(1.03);
+    cursor: pointer;
 }
 
-.project-box { 
-    width: 30rem;
-    height: 35%;
-    flex-direction: column;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
-}
-
-.project-photo { 
+.project-photo {
     width: 30rem;
     height: auto;
 }
 
-.project-desc { 
+.project-desc {
     padding: 1rem 1.5rem .5rem 1.5rem;
+    border-top-style: solid;
+    border-top-color: #3F4050;
+    border-top-width: 1px;
 }
-.category { 
+
+.category {
     color: white;
     height: auto;
     width: auto;
@@ -183,22 +181,6 @@ li>a:hover::before {
     margin-right: .5rem;
 }
 
-.category.development { 
-    background-color: #CC8B8C;
-}
-
-.development:after { 
-    content: "development";
-}
-
-.design:after { 
-    content: "design";
-}
-
-.category.design { 
-    background-color: #907F9F;
-}
-
 .project-tags {
     display: flex;
     flex-direction: row;
@@ -207,13 +189,61 @@ li>a:hover::before {
     margin-top: -0.8rem;
 }
 
-.project-title { 
+.project-title {
     font-family: "montserrat", sans-serif;
     font-size: 2rem;
     margin-bottom: .3rem;
 }
 
-.blurb { 
+.blurb {
     font-family: "montserrat-regular";
     padding-top: .5rem;
+}
+
+.project-box {
+    width: 30rem;
+    height: 30rem;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
+    margin-bottom: 5rem;
+}
+
+.category.design {
+    background-color: #907F9F;
+}
+
+.category.development {
+    background-color: #CC8B8C;
+}
+
+.category.research {
+    background-color: #1D7BC3;
+}
+
+.category.data {
+    background-color: #4B8943;
+}
+
+.category.product {
+    background-color: #B0611C;
+}
+
+.development:after {
+    content: "development";
+}
+
+.design:after {
+    content: "design";
+}
+
+.research::after {
+    content: "research";
+}
+
+.data::after {
+    content: "data analysis";
+}
+
+.product::after { 
+    content: "product";
 }
