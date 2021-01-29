@@ -119,14 +119,12 @@ li>a:hover::before {
 }
 
 .section-body {
-    padding-top: 3rem;
+    padding: 3rem 3rem 5rem 3rem;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    padding-left: 3rem;
-    padding-right: 3rem;
     background-color: #FBF6EF;
 }
 
@@ -246,4 +244,17 @@ li>a:hover::before {
 
 .product::after { 
     content: "product";
+}
+
+.foot { 
+    background-color: #FBF6EF;
+    text-align: center;
+    color: gray;
+    font-style: italic;
+    padding-bottom: 1rem;
+}
+
+#foot-about { 
+    padding-top: 2rem;
+    padding-bottom: 0;
 }
