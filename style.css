@@ -6,6 +6,14 @@
 #name {
     font-size: 1rem;
     font-family: "montserrat-regular", sans-serif;
+    padding-bottom: 1rem;
+}
+
+#intro-blurb {
+    font-size: 1.2rem;
+    font-family: Courier, sans-serif;
+    padding-top: 4rem;
+    border-top-style: solid;
 }
 
 @font-face {
@@ -110,7 +118,6 @@ li>a:hover::before {
     flex-wrap: wrap;
     width: 50%;
     height: auto;
-    padding-bottom: 10rem;
 }
 
 #color-block {
@@ -134,20 +141,28 @@ li>a:hover::before {
     font-family: "montserrat-regular", sans-serif;
 }
 
+#head-text {
+    font-size: 18px;
+    font-family: Courier, sans-serif;
+    text-align: center;
+    color: black;
+    background-color: #CEE5F2;
+    margin: 0;
+}
+
+#page-icons {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-top: 5rem;
+}
+
 #headshot {
     width: 30%;
     height: auto;
     box-shadow: 20px 20px #B4D7F9;
-}
-
-#test {
-    height: 20rem;
-    width: 40%;
-    background-color: skyblue;
-    align-self: center;
-    margin-left: 5rem;
-    box-shadow: -20px 20px gray;
-    /* make this blurry */
 }
 
 .project-box:hover {
@@ -242,11 +257,11 @@ li>a:hover::before {
     content: "data analysis";
 }
 
-.product::after { 
+.product::after {
     content: "product";
 }
 
-.foot { 
+.foot {
     background-color: #FBF6EF;
     text-align: center;
     color: gray;
@@ -254,9 +269,44 @@ li>a:hover::before {
     padding-bottom: 1rem;
 }
 
-#foot-short { 
+#foot-short {
     padding-top: 2rem;
     position: absolute;
     bottom: 0;
     width: 100%;
+}
+
+a>i {
+    color: gray;
+}
+
+a>i:hover {
+    color: black;
+    transition: color 0.3s ease-in-out;
+}
+
+/* 
+#slide-up {
+    height: 30px;
+    overflow: hidden;
+    background-color: pink;
+    animation: 3s slide-up;
+    margin-top: 2rem;
+} */
+
+/* animation delay*/
+
+/* @keyframes slide-up {
+    from {
+        padding-bottom: 20%;
+    }
+    to {
+        padding-bottom: 0%;
+    }
+} */
+
+#b-link {
+    background-color: #FFFBCC;
+    text-decoration: underline;
+    color: black;
 }
