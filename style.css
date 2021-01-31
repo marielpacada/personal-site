@@ -18,12 +18,12 @@
 
 @font-face {
     font-family: "montserrat";
-    src: url("/fonts/montserrat/Montserrat-ExtraBold.otf");
+    src: url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
 }
 
 @font-face {
     font-family: "montserrat-regular";
-    src: url("/fonts/montserrat/Montserrat-Regular.otf");
+    src: url("/fonts/montserrat/Montserrat-Regular.ttf");
 }
 
 html, body {
