@@ -135,6 +135,16 @@ li>a:hover::before {
     background-color: #FBF6EF;
 }
 
+#musings-body { 
+    display: flex; 
+    flex-direction: column;
+}
+
+.musings-piece { 
+    display: flex;
+    flex-direction: column;
+}
+
 #about-text {
     width: 40%;
     font-size: 18px;
