@@ -26,6 +26,11 @@
     src: url("/fonts/montserrat/Montserrat-Regular.ttf");
 }
 
+@font-face {
+    font-family: "montserrat-semi";
+    src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
 html, body {
     background-color: #FBF6EF;
     margin: 0;
@@ -133,16 +138,6 @@ li>a:hover::before {
     justify-content: space-evenly;
     align-items: center;
     background-color: #FBF6EF;
-}
-
-#musings-body { 
-    display: flex; 
-    flex-direction: column;
-}
-
-.musings-piece { 
-    display: flex;
-    flex-direction: column;
 }
 
 #about-text {
@@ -321,6 +316,45 @@ a>i:hover {
     color: black;
 }
 
-#b-link:hover {
+#b-link:hover, .piece-title:hover {
     filter: saturate(2);
+    color: gray;
+    /* transition: filter 0.3s ease-in-out; */
+    transition: color 0.3s ease;
+}
+
+#musings-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBF6EF;
+}
+
+.musings-piece {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 3rem;
+    border-bottom-style: solid;
+    border-bottom-color: #444444;
+    border-bottom-width: 2px;
+}
+
+.piece-title {
+    font-family: "montserrat-semi", sans-serif;
+    font-size: 2rem;
+    background-color: #FFFBCC;
+    color: black;
+}
+
+.piece-date {
+    font-family: Courier;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+
+.piece-desc {
+    font-family: "montserrat-regular", sans-serif;
+    font-style: italic;
 }
