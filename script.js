@@ -25,7 +25,7 @@ function typeDesc() {
     typewriter.pauseFor(2500);
     typewriter.typeString("like the little mermaid");
     typewriter.pauseFor(2500);
-    typewriter.typeString(' with an "m" in front.');
+    typewriter.typeString(' with an "m" before.');
 }
 
 

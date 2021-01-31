@@ -310,3 +310,7 @@ a>i:hover {
     text-decoration: underline;
     color: black;
 }
+
+#b-link:hover {
+    filter: saturate(2);
+}
