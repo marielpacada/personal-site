@@ -323,7 +323,7 @@ a>i:hover {
     transition: color 0.3s ease;
 }
 
-#musings-body {
+#musings-body, #piece-body {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -348,6 +348,16 @@ a>i:hover {
     color: black;
 }
 
+#piece-title-main {
+    font-family: "montserrat-semi", sans-serif;
+    font-size: 2rem;
+    color: black;
+    align-items: flex-start;
+    width: 40%;
+    padding-top: 2rem;
+}
+
+
 .piece-date {
     font-family: Courier;
     margin-top: -1rem;
@@ -357,4 +367,17 @@ a>i:hover {
 .piece-desc {
     font-family: "montserrat-regular", sans-serif;
     font-style: italic;
+}
+
+#piece-text {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    padding-top: 3rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding-bottom: 5rem;
+}
+
+#video { 
+    padding-top: 2rem;
 }
