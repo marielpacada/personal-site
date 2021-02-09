@@ -20,7 +20,6 @@ function typeDesc() {
     var name = document.getElementById("name");
     var typewriter = new Typewriter(name, { cursor: '', delay: 20 });
 
-    
     typewriter.start();
     typewriter.pauseFor(2500);
     typewriter.typeString("like the little mermaid");
@@ -31,9 +30,4 @@ function typeDesc() {
 
 function openProject(url) { 
     window.open(url, "_blank");
-
-
-
-
-
 }
