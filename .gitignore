@@ -1,4 +1,5 @@
 node_modules/
-*/.DS_Store
+images/.DS_Store
 .htaccess
 CNAME
+.DS_Store
