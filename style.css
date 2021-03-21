@@ -177,7 +177,8 @@ li>a:hover::before {
 
 .project-photo {
     width: 30rem;
-    height: auto;
+    height: 285px;
+    object-fit: cover;
 }
 
 .project-desc {
