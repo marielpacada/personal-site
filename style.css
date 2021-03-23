@@ -1,3 +1,24 @@
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-semi";
+    src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
+html body {
+    background-color: #FBF6EF;
+    margin: 0;
+    padding: 0;
+}
+
 #intro {
     font-size: 3rem;
     font-family: "montserrat", sans-serif;
@@ -14,27 +35,6 @@
     font-family: Courier, sans-serif;
     padding-top: 4rem;
     border-top-style: solid;
-}
-
-@font-face {
-    font-family: "montserrat";
-    src: url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-regular";
-    src: url("/fonts/montserrat/Montserrat-Regular.ttf");
-}
-
-@font-face {
-    font-family: "montserrat-semi";
-    src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
-}
-
-html, body {
-    background-color: #FBF6EF;
-    margin: 0;
-    padding: 0;
 }
 
 #penguin {
@@ -111,12 +111,6 @@ li>a:hover::before {
     flex-direction: row;
 }
 
-@media (max-width: 825px) {
-    #nav {
-        flex-direction: column;
-    }
-}
-
 #typewriters {
     display: flex;
     flex-direction: column;
@@ -188,18 +182,6 @@ li>a:hover::before {
     border-top-width: 1px;
 }
 
-.category {
-    color: white;
-    height: auto;
-    width: auto;
-    padding: .2rem .5rem .2rem .5rem;
-    display: inline-block;
-    font-family: sans-serif;
-    font-size: small;
-    border-radius: 18px;
-    margin-right: .5rem;
-}
-
 .project-tags {
     display: flex;
     flex-direction: row;
@@ -214,17 +196,29 @@ li>a:hover::before {
     margin-bottom: .3rem;
 }
 
-.blurb {
-    font-family: "montserrat-regular";
-    padding-top: .5rem;
-}
-
 .project-box {
     width: 30rem;
     height: 30rem;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.4);
     margin-bottom: 5rem;
+}
+
+.blurb {
+    font-family: "montserrat-regular";
+    padding-top: .5rem;
+}
+
+.category {
+    color: white;
+    height: auto;
+    width: auto;
+    padding: .2rem .5rem .2rem .5rem;
+    display: inline-block;
+    font-family: sans-serif;
+    font-size: small;
+    border-radius: 18px;
+    margin-right: .5rem;
 }
 
 .category.design {
@@ -291,26 +285,6 @@ a>i:hover {
     transition: color 0.3s ease-in-out;
 }
 
-/* 
-#slide-up {
-    height: 30px;
-    overflow: hidden;
-    background-color: pink;
-    animation: 3s slide-up;
-    margin-top: 2rem;
-} */
-
-/* animation delay*/
-
-/* @keyframes slide-up {
-    from {
-        padding-bottom: 20%;
-    }
-    to {
-        padding-bottom: 0%;
-    }
-} */
-
 #b-link {
     background-color: #FFFBCC;
     text-decoration: underline;
@@ -358,7 +332,6 @@ a>i:hover {
     padding-top: 2rem;
 }
 
-
 .piece-date {
     font-family: Courier;
     margin-top: -1rem;
@@ -379,6 +352,132 @@ a>i:hover {
     padding-bottom: 5rem;
 }
 
-#video { 
+#video {
     padding-top: 2rem;
+}
+
+#hello {
+    display: none;
+}
+
+/* mobile design */
+
+@media (max-width: 1025px) {
+    #color-block {
+        content: url("images/pengwing.png");
+        flex: 0 1 auto;
+        margin-right: auto;
+        height: 40rem;
+    }
+    #typewriters {
+        width: 90%;
+    }
+    #logo {
+        display: none;
+    }
+    #hello {
+        display: inline;
+    }
+    #intro {
+        font-size: 6rem;
+        margin-bottom: 2rem;
+    }
+    #name {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    #intro-blurb {
+        font-size: 2rem;
+        padding-top: 5rem;
+        width: 70%;
+    }
+    #intro-blurb>p {
+        margin-bottom: 4rem;
+    }
+    .foot {
+        padding-top: 2rem;
+        position: relative;
+        bottom: 2rem;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+    #page-links {
+        padding-top: 4rem;
+    }
+    .nav-item {
+        font-size: 2.2rem;
+    }
+    #head-text {
+        display: none;
+    }
+    #about-body {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    #about-text {
+        width: 85%;
+        font-size: 2rem;
+    }
+    #headshot {
+        margin-top: 3rem;
+        margin-bottom: 5rem;
+        height: 50rem;
+        width: auto;
+    }
+    .project-photo {
+        width: 50rem;
+        height: 545px;
+    }
+    .project-desc {
+        padding: 1rem 2rem 0 2rem;
+    }
+    .project-title {
+        font-size: 3.5rem;
+    }
+    .project-box {
+        width: 50rem;
+        height: 51rem;
+    }
+    #project-body {
+        margin-top: 5rem;
+    }
+    .blurb {
+        font-size: 1.5rem;
+    }
+    .category {
+        font-size: large;
+    }
+    .musings-piece {
+        width: 80%;
+    }
+    .piece-title {
+        font-size: 3.5rem;
+    }
+    #piece-title-main {
+        font-size: 4rem;
+        width: 85%;
+    }
+    .piece-date, .piece-desc {
+        font-size: 1.5rem;
+        width: 85% !important;
+    }
+    #musings-body, #piece-body{
+        margin-top: 4rem;
+    }
+    #page-icons {
+        display: flex;
+        flex-direction: column;
+        font-size: x-large;
+    }
+    #page-icons>a {
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    #piece-text {
+        width: 85%;
+        font-size: 2rem;
+        padding-bottom: 15rem;
+    }
+    
 }
