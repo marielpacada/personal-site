@@ -389,10 +389,11 @@ a>i:hover {
     #intro-blurb {
         font-size: 2rem;
         padding-top: 5rem;
-        width: 70%;
+        width: 90%;
     }
     #intro-blurb>p {
         margin-bottom: 4rem;
+        width: 70%;
     }
     .foot {
         padding-top: 2rem;
