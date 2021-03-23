@@ -269,7 +269,7 @@ li>a:hover::before {
     padding-bottom: 1rem;
 }
 
-#foot-short {
+.foot-short {
     padding-top: 2rem;
     position: absolute;
     bottom: 0;
