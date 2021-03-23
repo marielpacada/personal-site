@@ -270,10 +270,10 @@ li>a:hover::before {
 }
 
 .foot-short {
-    padding-top: 2rem;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+    padding-top: 2rem !important;
+    position: absolute !important;
+    bottom: 0 !important;
+    width: 100% !important;
 }
 
 a>i {
