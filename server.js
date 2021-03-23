@@ -27,7 +27,6 @@ function typeDesc() {
     typewriter.typeString(' with an "m" before.');
 }
 
-
-function openProject(url) { 
+function openProject(url) {
     window.open(url, "_blank");
 }
