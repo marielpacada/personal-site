@@ -363,6 +363,9 @@ a>i:hover {
 /* mobile design */
 
 @media (max-width: 1025px) {
+    #nav {
+        justify-content: center;
+    }
     #color-block {
         content: url("images/pengwing.png");
         flex: 0 1 auto;
