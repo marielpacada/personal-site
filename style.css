@@ -349,7 +349,10 @@ a>i:hover {
     width: 40%;
     padding-top: 3rem;
     font-family: "montserrat-regular", sans-serif;
-    padding-bottom: 5rem;
+    padding-bottom: 15rem;
+}
+#piece-text>i {
+    font-size: small;
 }
 
 #video {
@@ -483,5 +486,8 @@ a>i:hover {
         width: 85%;
         font-size: 2rem;
         padding-bottom: 15rem;
+    }
+    #piece-text>i {
+        font-size: 1.5rem;
     }
 }
