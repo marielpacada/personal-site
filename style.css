@@ -344,13 +344,18 @@ a>i:hover {
 }
 
 #piece-text {
-    display: flex;
-    flex-direction: column;
     width: 40%;
     padding-top: 3rem;
     font-family: "montserrat-regular", sans-serif;
     padding-bottom: 15rem;
 }
+
+#piece-text>img {
+    width: auto;
+    height: 500px;
+    margin-bottom: 10px;
+}
+
 #piece-text>i {
     font-size: small;
 }
