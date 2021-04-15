@@ -43,6 +43,10 @@ html body {
     padding-top: 1rem;
 }
 
+#penguin:hover { 
+    transform: scale(1.1);
+}
+
 .nav-item {
     font-family: "montserrat-regular", sans-serif;
     font-size: 1.2rem;
