@@ -186,14 +186,6 @@ li>a:hover::before {
     border-top-width: 1px;
 }
 
-.project-tags {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: -0.8rem;
-}
-
 .project-title {
     font-family: "montserrat", sans-serif;
     font-size: 2rem;
