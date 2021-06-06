@@ -5,27 +5,50 @@ html {
     -o-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    margin: 10vh;
+    margin: 0;
+    padding: 0;
 }
 
-.glass-card {
-    background-color: rgba(255, 255, 255, .25);
-    border-radius: 70px;
-    display: inline-block;
+.nav-button {
+    width: 70%;
+    background-color: rgba(255, 255, 255, .5);
+
 }
 
-.sidebar {
-    background-color: rgba(255, 255, 255, .55);
-    border-radius: 70px 0 0 70px;
-    display: inline-block;
-    width: 20rem;
-    height: 80vh;
-}
 
-.home {
-    background-color: rgba(255, 255, 255, .25);
-    width: 40rem;
-    height: 80vh;
-    border-radius: 0 70px 70px 0;
-    display: inline-block;
+/* display for laptop */
+
+@media (max-width: 1520px) {
+    .app {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        padding: 5rem;
+    }
+    .glass-card {
+        background-color: rgba(255, 255, 255, .25);
+        border-radius: 70px;
+        display: inline-block;
+    }
+    .sidebar {
+        background-color: rgba(255, 255, 255, .55);
+        border-radius: 70px 0 0 70px;
+        display: inline-block;
+        width: 20rem;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .home {
+        background-color: rgba(255, 255, 255, .25);
+        width: calc(100vw - 20vh - 20rem);
+        height: 80vh;
+        border-radius: 0 70px 70px 0;
+        display: inline-block;
+    }
 }

@@ -3,7 +3,7 @@ import HomeCard from "./HomeCard";
 import Sidebar from "./Sidebar";
 
 function App() {
-    return <div className="flex-row">
+    return <div className="app">
         <Sidebar />
         <HomeCard />
     </div>
