@@ -111,6 +111,31 @@ html {
         width: calc(100vw - 20vh - 20rem);
         height: 80vh;
         border-radius: 0 70px 70px 0;
-        display: inline-block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 7rem;
     }
+}
+
+.typewriter {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+}
+
+.type-head {
+    font-size: 3rem;
+    font-family: "montserrat", sans-serif;
+    color: #1E6685;
+    margin-bottom: 2rem;
+}
+
+.type-subhead {
+    font-size: 1rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding-bottom: 1rem;
 }
