@@ -3,10 +3,10 @@ import NavButton from "./NavButton";
 
 function Sidebar() {
     return <div className="my-col-start sidebar">
-    <NavButton icon="fas fa-user-circle" tabName="about"/>
-    <NavButton icon="fas fa-laptop-code" tabName="projects"/>
-    <NavButton icon="fas fa-comment-dots" tabName="musings"/>
-    <NavButton icon="fas fa-id-card" tabName="contact"/>
+    <NavButton iconName="user-circle" tabName="about"/>
+    <NavButton iconName="laptop-code" tabName="projects"/>
+    <NavButton iconName="comment-dots" tabName="musings"/>
+    <NavButton iconName="id-card" tabName="contact"/>
     </div>;
 
 }
