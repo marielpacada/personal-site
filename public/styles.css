@@ -1,7 +1,31 @@
-html { 
-    background: url("images/bg.jpg") no-repeat center center fixed; 
+html {
+    background: url("images/bg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-  }
+    background-attachment: fixed;
+    margin: 10vh;
+}
+
+.glass-card {
+    background-color: rgba(255, 255, 255, .25);
+    border-radius: 70px;
+    display: inline-block;
+}
+
+.sidebar {
+    background-color: rgba(255, 255, 255, .55);
+    border-radius: 70px 0 0 70px;
+    display: inline-block;
+    width: 20rem;
+    height: 80vh;
+}
+
+.home {
+    background-color: rgba(255, 255, 255, .25);
+    width: 40rem;
+    height: 80vh;
+    border-radius: 0 70px 70px 0;
+    display: inline-block;
+}
