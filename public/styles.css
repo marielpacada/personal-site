@@ -57,24 +57,7 @@ html {
     border-radius: 15px;
     margin-bottom: .7rem;
     color: gray;
-}
-
-.nav-button:hover {
-    background-image: url("images/btn-bg.jpg");
-    background-size: cover;
-    color: white;
-}
-
-.hero::before {    
-    content: "";
-    background-image: url('https://placekitten.com/1200/800');
-    background-size: cover;
-    position: absolute;
-    top: 0px;
-    right: 0px;
-    bottom: 0px;
-    left: 0px;
-    opacity: 0.75;
+    transition: .3s ease;
 }
 
 .tab-icon {
