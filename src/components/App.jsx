@@ -3,7 +3,7 @@ import HomeCard from "./HomeCard";
 import Sidebar from "./Sidebar";
 
 function App() {
-    return <div className="app">
+    return <div className="my-row-center app">
         <Sidebar />
         <HomeCard />
     </div>

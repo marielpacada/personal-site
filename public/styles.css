@@ -24,19 +24,57 @@ html {
     src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
 }
 
+.my-row-start {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.my-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.my-col-start {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* CHANGE TO ZERO OPACITY */
+
 .nav-button {
     width: 70%;
     background-color: rgba(255, 255, 255, .5);
+    padding: .7rem;
+    border-radius: 15px;
+    margin-bottom: .7rem;
+}
+
+.tab-icon {
+    text-align: center;
+    width: 15%;
+    margin-right: .75rem;
+}
+
+.nav-button>* {
+    font-family: "montserrat-regular", sans-serif;
+    margin-left: .5rem;
+    font-size: 1.2rem;
+}
+
+.nav-button>div>p {
+    margin: 3px;
 }
 
 /* display for laptop */
 
 @media (max-width: 1520px) {
     .app {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
         width: 100vw;
         height: 100vh;
         padding: 5rem;
@@ -49,13 +87,8 @@ html {
     .sidebar {
         background-color: rgba(255, 255, 255, .55);
         border-radius: 70px 0 0 70px;
-        display: inline-block;
         width: 20rem;
         height: 80vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
     }
     .home {
         background-color: rgba(255, 255, 255, .25);
