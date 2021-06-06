@@ -9,12 +9,25 @@ html {
     padding: 0;
 }
 
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-semi";
+    src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
 .nav-button {
     width: 70%;
     background-color: rgba(255, 255, 255, .5);
-
 }
-
 
 /* display for laptop */
 
