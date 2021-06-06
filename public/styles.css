@@ -45,17 +45,36 @@ html {
     align-items: center;
 }
 
+.sidebar>div:hover {
+    cursor: pointer;
+}
+
 .nav-button {
+    font-family: "montserrat-regular", sans-serif;
     width: 70%;
     background-color: rgba(255, 255, 255, 0);
     padding: .7rem;
     border-radius: 15px;
     margin-bottom: .7rem;
+    color: gray;
 }
 
 .nav-button:hover {
-    background-color: blueviolet;
-    cursor: pointer;
+    background-image: url("images/btn-bg.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.hero::before {    
+    content: "";
+    background-image: url('https://placekitten.com/1200/800');
+    background-size: cover;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    opacity: 0.75;
 }
 
 .tab-icon {
@@ -65,13 +84,24 @@ html {
 }
 
 .nav-button>* {
-    font-family: "montserrat-regular", sans-serif;
     margin-left: .5rem;
     font-size: 1.2rem;
 }
 
 .nav-button>div>p {
     margin: 3px;
+}
+
+.portrait {
+    background-color: rgba(255, 255, 255, 0);
+    width: 70%;
+    margin: 2.5rem 0;
+    border-radius: 40px;
+}
+
+.nav-pic {
+    width: 80%;
+    height: auto;
 }
 
 /* display for laptop */
