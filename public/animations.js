@@ -1,5 +1,4 @@
 /* eslint-env jquery */
-
 $(function () {
     $(".nav-button").on({
         mouseenter: function () {
@@ -19,5 +18,3 @@ $(function () {
         }
     });
 });
-
-

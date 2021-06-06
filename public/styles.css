@@ -57,7 +57,7 @@ html {
     border-radius: 15px;
     margin-bottom: .7rem;
     color: gray;
-    transition: .3s ease;
+    transition: .5s ease;
 }
 
 .tab-icon {
@@ -107,7 +107,7 @@ html {
         height: 80vh;
     }
     .home {
-        background-color: rgba(255, 255, 255, .25);
+        background-color: rgba(255, 255, 255, .28);
         width: calc(100vw - 20vh - 20rem);
         height: 80vh;
         border-radius: 0 70px 70px 0;
