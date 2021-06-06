@@ -4,6 +4,7 @@ import Typewriter from 'typewriter-effect';
 function HomeCard(props) {
     return (
         <div className="home">
+
             <div className="typewriter">
                 <div className="type-head">
                     <Typewriter
@@ -25,16 +26,28 @@ function HomeCard(props) {
                         options={{ cursor: '', delay: 20 }}
                         onInit={(typewriter) => {
                             typewriter.start()
-                                .pauseFor(2500)
+                                .pauseFor(2600)
                                 .typeString("like the little mermaid")
                                 .pauseFor(2500)
                                 .typeString(' with an "m" before.')
                         }}
                     />
-
                 </div>
-
             </div>
+
+
+
+
+
+
+
+
+
+            <div className="byline">
+                <p>east coast college student with a west coast soul</p>
+                <p><a href="https://cs.brown.edu/">brown cs</a> based in cali</p>
+            </div>
+
 
 
         </div>

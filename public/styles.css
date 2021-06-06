@@ -57,7 +57,7 @@ html {
     border-radius: 15px;
     margin-bottom: .7rem;
     color: gray;
-    transition: .5s ease;
+    transition: .3s ease;
 }
 
 .tab-icon {
@@ -138,4 +138,25 @@ html {
     font-size: 1rem;
     font-family: "montserrat-regular", sans-serif;
     padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.byline {
+    font-size: 1.2rem;
+    font-family: Courier, sans-serif;
+    padding-top: 4rem;
+    border-top-style: solid;
+    border-color: #1E6685;
+}
+
+.byline>p>a {
+    background-color: #FFFBCC;
+    text-decoration: underline;
+    color: black;
+}
+
+.byline>p>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
 }
