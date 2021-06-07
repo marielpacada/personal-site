@@ -13,8 +13,8 @@ $(function () {
             $(this).css({
                 "color": "gray",
                 "background-image": "none",
-                "background-color": "rgba(255, 255, 255, 0)"
             });
         }
     });
+    
 });
