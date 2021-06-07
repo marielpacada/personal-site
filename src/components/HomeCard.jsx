@@ -10,14 +10,15 @@ function HomeCard() {
                         <Typewriter
                             options={{ delay: 100 }}
                             onInit={(typewriter) => {
-                                typewriter.start()
+                                typewriter
                                     .typeString("hey, my name is ...")
                                     .pauseFor(1500)
                                     .deleteChars(3)
                                     .typeString(" ariel?")
                                     .pauseFor(1800)
                                     .deleteChars(6)
-                                    .typeString("mariel!");
+                                    .typeString("mariel!")
+                                    .start();
                             }}
                         />
                     </div>
@@ -25,11 +26,12 @@ function HomeCard() {
                         <Typewriter
                             options={{ cursor: '', delay: 20 }}
                             onInit={(typewriter) => {
-                                typewriter.start()
+                                typewriter
                                     .pauseFor(2600)
                                     .typeString("like the little mermaid")
                                     .pauseFor(2500)
                                     .typeString(' with an "m" before.')
+                                    .start();
                             }}
                         />
                     </div>

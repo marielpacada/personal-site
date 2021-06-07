@@ -28,6 +28,26 @@ html {
     src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
 }
 
+/* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
+
+@media (max-width: 1520px) {
+    .app {
+        width: 100vw;
+        padding: 5rem;
+    }
+    .sidebar {
+        width: 18rem;
+        height: 80vh;
+    }
+    .home-card {
+        width: calc(100vw - 20vh - 20rem);
+        height: 80vh;
+    }
+    .body-card {
+        width: calc(100vw - 20vh - 20rem);
+    }
+}
+
 /* ----------------------------------------------ROW AND COL----------------------------------------------- */
 
 .my-row {
@@ -146,29 +166,31 @@ html {
     height: auto;
 }
 
-/* display for laptop */
+/* -----------------------------------------------HOMECARD------------------------------------------------- */
 
-@media (max-width: 1520px) {
-    .app {
-        width: 100vw;
-        padding: 5rem;
-    }
-    .sidebar {
-        width: 18rem;
-        height: 80vh;
-    }
-    .home-card {
-        width: calc(100vw - 20vh - 20rem);
-        height: 80vh;
-    }
-    .body-card {
-        width: calc(100vw - 20vh - 20rem);
-    }
+.home-card>div {
+    width: 100%;
 }
 
+.home-top {
+    height: 70%;
+    border-radius: 55px 55px 0 0;
+    background-color: rgba(255, 255, 255, .28);
+}
+
+.home-bottom {
+    height: 30%;
+    background-color: rgba(255, 245, 219, .80);
+    border-radius: 0 0 55px 55px;
+}
+
+.memoji {
+    height: 200px;
+}
+
+/* -----------------------------------------------TYPEWRITER----------------------------------------------- */
+
 .typewriter {
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     width: 80%;
     height: auto;
@@ -188,40 +210,26 @@ html {
     margin-bottom: 1.5rem;
 }
 
+/* ------------------------------------------------BYLINE-------------------------------------------------- */
+
 .byline {
     font-size: 1.2rem;
     font-family: Courier, sans-serif;
 }
 
-.byline>p>a, .body-content>a {
+.byline>p>a {
     background-color: #FADADD;
     text-decoration: underline;
     color: black;
 }
 
-.byline>p>a:hover .body-content>a:hover {
+.byline>p>a:hover {
     filter: saturate(2);
     color: gray;
     transition: color 0.3s ease;
 }
 
-.home-top {
-    width: 100%;
-    height: 70%;
-    border-radius: 55px 55px 0 0;
-    background-color: rgba(255, 255, 255, .28);
-}
-
-.home-bottom {
-    height: 30%;
-    width: 100%;
-    background-color: rgba(255, 245, 219, .80);
-    border-radius: 0 0 55px 55px;
-}
-
-.memoji {
-    height: 200px;
-}
+/* -----------------------------------------------BODYCARD------------------------------------------------- */
 
 .body-card {
     background-color: rgba(252, 245, 219, .30);
@@ -250,4 +258,16 @@ html {
     width: 70%;
     border-radius: 75px;
     margin: auto;
+}
+
+.body-content>a {
+    background-color: #FADADD;
+    text-decoration: underline;
+    color: black;
+}
+
+.body-content>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
 }

@@ -6,7 +6,6 @@ function Sidebar() {
     return (
         <div className="my-col start-center-align sidebar">
             <Portrait />
-
             <NavButton iconName="user-circle" tabName="about" />
             <NavButton iconName="laptop-code" tabName="projects" />
             <NavButton iconName="comment-dots" tabName="musings" />
