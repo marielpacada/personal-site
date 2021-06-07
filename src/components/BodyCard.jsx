@@ -3,14 +3,15 @@ import React from "react";
 
 function BodyCard(props) {
     return (
-        <div className="body-card">
+        <div className="body-card my-col-start">
             <div className="body-heading">
                 <p>{props.greeting}</p>
             </div>
 
             <div className="body-content">
-                <p>{props.text}</p>
+                {props.html}
             </div>
+
 
         </div>
     );

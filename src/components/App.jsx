@@ -1,12 +1,15 @@
 import React from "react";
 // import HomeCard from "./HomeCard";
 import Sidebar from "./Sidebar";
-import BodyCard from "./BodyCard";
+import About from "./About";
+
+
+
 
 function App() {
-    return <div className="my-row-center app">
+    return <div className="my-row-scroll app">
         <Sidebar />
-        <BodyCard greeting="nice to meet you!" text="hello there" />
+        <About />
     </div>
 }
 

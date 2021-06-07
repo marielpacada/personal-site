@@ -31,6 +31,13 @@ html {
     align-items: center;
 }
 
+.my-row-scroll { 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
 .my-row-center {
     display: flex;
     flex-direction: row;
@@ -106,7 +113,6 @@ html {
 @media (max-width: 1520px) {
     .app {
         width: 100vw;
-        height: 100vh;
         padding: 5rem;
         justify-content: space-between;
     }
@@ -152,13 +158,13 @@ html {
     font-family: Courier, sans-serif;
 }
 
-.byline>p>a {
+.byline>p>a, .body-content>a {
     background-color: #FADADD;
     text-decoration: underline;
     color: black;
 }
 
-.byline>p>a:hover {
+.byline>p>a:hover .body-content>a:hover {
     filter: saturate(2);
     color: gray;
     transition: color 0.3s ease;
@@ -174,7 +180,7 @@ html {
 .home-bottom {
     height: 30%;
     width: 100%;
-    background-color: rgba(255, 255, 255, .70);
+    background-color: rgba(252, 245, 219, .60);
     border-radius: 0 0 55px 55px;
 }
 
@@ -192,4 +198,21 @@ html {
 .body-card>div>p {
     margin: 0;
     padding: 2rem 3rem;
+}
+
+.body-card {
+    height: auto;
+}
+
+.body-content {
+    background-color: rgba(255, 255, 255, .70);
+    font-size: 1.25rem;
+    width: 100%;
+    font-family: "montserrat-regular", sans-serif;
+    padding: 2rem 3rem;
+}
+
+.headshot {
+    width: 70%;
+    border-radius: 75px;
 }
