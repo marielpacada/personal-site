@@ -6,7 +6,7 @@ import BodyCard from "./BodyCard";
 function App() {
     return <div className="my-row-center app">
         <Sidebar />
-        <BodyCard />
+        <BodyCard greeting="nice to meet you!" text="hello there" />
     </div>
 }
 

@@ -112,7 +112,7 @@ html {
     }
     .sidebar {
         background-color: rgba(255, 255, 255, .55);
-        border-radius: 50px;
+        border-radius: 55px;
         width: 18rem;
         height: 80vh;
     }
@@ -133,7 +133,7 @@ html {
     height: auto;
 }
 
-.type-head {
+.type-head, .body-heading {
     font-size: 3rem;
     font-family: "montserrat", sans-serif;
     color: #1E6685;
@@ -180,4 +180,16 @@ html {
 
 .memoji {
     height: 200px;
+}
+
+.body-heading {
+    background-color: rgba(255, 255, 255, .30);
+    font-size: 2rem;
+    width: 100%;
+    border-radius: 55px 55px 0 0;
+}
+
+.body-card>div>p {
+    margin: 0;
+    padding: 2rem 3rem;
 }
