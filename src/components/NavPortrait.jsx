@@ -1,9 +1,9 @@
 import React from "react";
 
-function Portrait() {
+function NavPortrait() {
     return <div className="portrait my-row center-align">
         <img src="images/pengwing.png" alt="portrait" className="nav-img" />
     </div>;
 }
 
-export default Portrait;
+export default NavPortrait;

@@ -92,7 +92,7 @@ html {
     cursor: pointer;
 }
 
-/* -----------------------------------------------NAV BUTTON----------------------------------------------- */
+/* ----------------------------------------------NAV BUTTON------------------------------------------------ */
 
 .tab-icon {
     text-align: center;
@@ -150,6 +150,8 @@ html {
     font-size: 1.2rem;
 }
 
+/* ---------------------------------------------NAV PORTRAIT----------------------------------------------- */
+
 .portrait {
     width: 70%;
     margin: 2.5rem 0;
@@ -158,7 +160,7 @@ html {
 }
 
 .portrait:hover {
-    background-color: blueviolet;
+    background-color: #B57EDC;
 }
 
 .nav-img {
@@ -234,8 +236,10 @@ html {
 .body-card {
     background-color: rgba(252, 245, 219, .30);
     border-radius: 55px;
-    font-family: "montserrat", sans-serif;
-    color: #1E6685;
+}
+
+.body-card>div {
+    width: 100%;
 }
 
 .greeting {
@@ -247,27 +251,39 @@ html {
 
 .body-content {
     background-color: rgba(255, 255, 255, .40);
-    font-size: 1.25rem;
-    width: 100%;
+    font-size: 1.15rem;
     font-family: "montserrat-regular", sans-serif;
-    padding: 2rem 3rem;
+    padding: 5rem 7rem;
     border-radius: 55px;
-}
-
-.headshot {
-    width: 70%;
-    border-radius: 75px;
-    margin: auto;
-}
-
-.body-content>a {
-    background-color: #FADADD;
-    text-decoration: underline;
-    color: black;
+    line-height: 2rem;
 }
 
 .body-content>a:hover {
     filter: saturate(2);
     color: gray;
     transition: color 0.3s ease;
+}
+
+/* -----------------------------------------------HEADSHOT------------------------------------------------- */
+
+.headshot {
+    margin: 0 auto 4rem auto;
+    display: flex;
+}
+
+.headshot>img {
+    width: auto;
+    height: 350px;
+    border-radius: 30px;
+}
+
+.headshot-img {
+    margin-left: -4rem;
+}
+/* -------------------------------------------------ABOUT-------------------------------------------------- */
+
+.about-bio>a {
+    background-color: #FADADD;
+    text-decoration: underline;
+    color: black;
 }
