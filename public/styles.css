@@ -52,6 +52,10 @@ html {
     align-items: center;
 }
 
+.sidebar {
+    position: sticky;
+}
+
 .sidebar>div:hover {
     cursor: pointer;
 }
@@ -106,20 +110,18 @@ html {
         padding: 5rem;
         justify-content: space-between;
     }
-    .glass-card {
-        background-color: rgba(255, 255, 255, .25);
-        border-radius: 70px;
-        display: inline-block;
-    }
     .sidebar {
         background-color: rgba(255, 255, 255, .55);
         border-radius: 50px;
         width: 18rem;
         height: 80vh;
     }
-    .home {
+    .home-card {
         width: calc(100vw - 20vh - 20rem);
         height: 80vh;
+    }
+    .body-card {
+        width: calc(100vw - 20vh - 20rem);
     }
 }
 

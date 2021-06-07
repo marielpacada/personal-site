@@ -1,9 +1,9 @@
 import React from "react";
 import Typewriter from 'typewriter-effect';
 
-function HomeCard(props) {
+function HomeCard() {
     return (
-        <div className="home my-col-start">
+        <div className="home-card my-col-start">
             <div className="home-top my-col-center">
                 <div className="typewriter my-col-center">
                     <div className="type-head">
@@ -34,28 +34,14 @@ function HomeCard(props) {
                         />
                     </div>
                 </div>
-
-
-                <img src="images/memoji.gif" alt="mariel's memoji" className="memoji" />
-
-
+                <img src="images/memoji/m1.png" alt="mariel's memoji" className="memoji" />
             </div>
-
-
-
-
 
             <div className="home-bottom my-row-center">
                 <div className="byline">
                     <p>current: <a href="https://cs.brown.edu/">brown</a> cs + <a href="https://www.smugmug.com/">smugmug</a> front-end</p>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
     );
 }
