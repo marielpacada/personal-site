@@ -3,10 +3,10 @@ import React from "react";
 
 function BodyCard(props) {
     return (
-        <div className="body-card my-col-start">
-            <div className="body-heading">
-                <p>{props.greeting}</p>
-            </div>
+        <div className="body-card my-col top-left-align">
+
+            <p className="greeting">{props.greeting}</p>
+
 
             <div className="body-content">
                 {props.html}

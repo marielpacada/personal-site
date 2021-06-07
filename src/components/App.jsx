@@ -1,15 +1,15 @@
 import React from "react";
-// import HomeCard from "./HomeCard";
+import HomeCard from "./HomeCard";
 import Sidebar from "./Sidebar";
-import About from "./About";
+// import About from "./About";
 
 
 
 
 function App() {
-    return <div className="my-row-scroll app">
+    return <div className="my-row row-full-vw app">
         <Sidebar />
-        <About />
+        <HomeCard />
     </div>
 }
 

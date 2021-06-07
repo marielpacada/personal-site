@@ -4,7 +4,7 @@ import Portrait from "./Portrait";
 
 function Sidebar() {
     return (
-        <div className="my-col-start sidebar">
+        <div className="my-col start-center-align sidebar">
             <Portrait />
 
             <NavButton iconName="user-circle" tabName="about" />

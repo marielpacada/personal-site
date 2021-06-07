@@ -1,3 +1,5 @@
+/* --------------------------------------------------META-------------------------------------------------- */
+
 html {
     background: url("images/bg.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -8,6 +10,8 @@ html {
     margin: 0;
     padding: 0;
 }
+
+/* -------------------------------------------------FONTS-------------------------------------------------- */
 
 @font-face {
     font-family: "montserrat";
@@ -24,47 +28,60 @@ html {
     src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
 }
 
-.my-row-start {
+/* ----------------------------------------------ROW AND COL----------------------------------------------- */
+
+.my-row {
     display: flex;
     flex-direction: row;
+}
+
+.my-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-align {
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left-align {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.start-center-align {
     justify-content: flex-start;
     align-items: center;
 }
 
-.my-row-scroll {
-    display: flex;
-    flex-direction: row;
+.row-full-vw {
     justify-content: space-between;
     align-items: flex-start;
 }
 
-.my-row-center {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-col-center {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.my-col-start {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-}
+/* ------------------------------------------------SIDEBAR------------------------------------------------- */
 
 .sidebar {
     position: sticky;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 55px;
 }
 
 .sidebar>div:hover {
     cursor: pointer;
+}
+
+/* -----------------------------------------------NAV BUTTON----------------------------------------------- */
+
+.tab-icon {
+    text-align: center;
+    width: 15%;
+    margin-right: .75rem;
+}
+
+.tab-name {
+    margin: 3px;
 }
 
 .nav-button {
@@ -100,7 +117,7 @@ html {
     color: white;
 }
 
-.nav-button:hover .nav-button-overlay { 
+.nav-button:hover .nav-button-overlay {
     opacity: 1;
 }
 
@@ -108,19 +125,9 @@ html {
     opacity: 1;
 }
 
-.tab-icon {
-    text-align: center;
-    width: 15%;
-    margin-right: .75rem;
-}
-
 .nav-button>* {
     margin-left: .5rem;
     font-size: 1.2rem;
-}
-
-.nav-button>div>p {
-    margin: 3px;
 }
 
 .portrait {
@@ -134,7 +141,7 @@ html {
     background-color: blueviolet;
 }
 
-.nav-pic {
+.nav-img {
     width: 80%;
     height: auto;
 }
@@ -145,11 +152,8 @@ html {
     .app {
         width: 100vw;
         padding: 5rem;
-        justify-content: space-between;
     }
     .sidebar {
-        background-color: rgba(255, 255, 255, .55);
-        border-radius: 55px;
         width: 18rem;
         height: 80vh;
     }
@@ -170,7 +174,7 @@ html {
     height: auto;
 }
 
-.type-head, .body-heading {
+.type-head {
     font-size: 3rem;
     font-family: "montserrat", sans-serif;
     color: #1E6685;
@@ -211,7 +215,7 @@ html {
 .home-bottom {
     height: 30%;
     width: 100%;
-    background-color: rgba(252, 245, 219, .60);
+    background-color: rgba(255, 245, 219, .80);
     border-radius: 0 0 55px 55px;
 }
 
@@ -219,31 +223,31 @@ html {
     height: 200px;
 }
 
-.body-heading {
-    background-color: rgba(255, 255, 255, .30);
-    font-size: 2rem;
-    width: 100%;
-    border-radius: 55px 55px 0 0;
-}
-
-.body-card>div>p {
-    margin: 0;
-    padding: 2rem 3rem;
-}
-
 .body-card {
-    height: auto;
+    background-color: rgba(252, 245, 219, .30);
+    border-radius: 55px;
+    font-family: "montserrat", sans-serif;
+    color: #1E6685;
+}
+
+.greeting {
+    font-size: 2rem;
+    font-family: "montserrat", sans-serif;
+    color: #1E6685;
+    padding: 0 3rem;
 }
 
 .body-content {
-    background-color: rgba(255, 255, 255, .70);
+    background-color: rgba(255, 255, 255, .40);
     font-size: 1.25rem;
     width: 100%;
     font-family: "montserrat-regular", sans-serif;
     padding: 2rem 3rem;
+    border-radius: 55px;
 }
 
 .headshot {
     width: 70%;
     border-radius: 75px;
+    margin: auto;
 }
