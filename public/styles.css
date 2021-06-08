@@ -150,9 +150,24 @@ html {
     font-size: 1.2rem;
 }
 
+.nav-link { 
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.current-tab { 
+    display: flex;
+}
+
 /* ---------------------------------------------NAV PORTRAIT----------------------------------------------- */
 
 .portrait {
+    position: relative;
     width: 70%;
     margin: 2.5rem 0;
     border-radius: 40px;
@@ -274,16 +289,23 @@ html {
 .headshot>img {
     width: auto;
     height: 350px;
-    border-radius: 30px;
+    border-radius: 35px;
 }
 
 .headshot-img {
     margin-left: -4rem;
 }
+
 /* -------------------------------------------------ABOUT-------------------------------------------------- */
 
 .about-bio>a {
     background-color: #FADADD;
     text-decoration: underline;
     color: black;
+}
+
+.about-bio>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
 }

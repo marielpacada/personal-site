@@ -1,6 +1,5 @@
 import React from "react";
 
-
 function BodyCard(props) {
     return (
         <div className="body-card my-col top-left-align">
@@ -8,8 +7,6 @@ function BodyCard(props) {
             <div className="body-content top-left-align my-col">
                 {props.html}
             </div>
-
-
         </div>
     );
 }
