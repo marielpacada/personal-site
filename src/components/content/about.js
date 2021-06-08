@@ -1,4 +1,4 @@
-import Headshot from ".././Headshot";
+import Headshot from "../about/Headshot";
 
 const aboutMeText = <>
     <Headshot />

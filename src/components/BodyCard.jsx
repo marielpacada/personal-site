@@ -7,6 +7,7 @@ function BodyCard(props) {
             <div className="body-content top-left-align my-col">
                 {props.html}
             </div>
+            <div className="whitespace"></div>
         </div>
     );
 }

@@ -1,6 +1,6 @@
 import React from "react";
-import BodyCard from "./BodyCard";
-import aboutMeText from "./content/about";
+import BodyCard from "../BodyCard";
+import aboutMeText from "../content/about";
 
 function About() {
     return (

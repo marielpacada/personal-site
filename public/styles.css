@@ -9,6 +9,8 @@ html {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
 }
 
 /* -------------------------------------------------FONTS-------------------------------------------------- */
@@ -45,12 +47,13 @@ html {
         width: 18rem;
         height: 80vh;
     }
+    /* calc(viewport - sidebar - padding both sides - space between sidebar and card) */
     .home-card {
-        width: calc(100vw - 20vh - 20rem);
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
         height: 80vh;
     }
     .body-card {
-        width: calc(100vw - 20vh - 20rem);
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
     }
 }
 
@@ -79,11 +82,6 @@ html {
 .start-center-align {
     justify-content: flex-start;
     align-items: center;
-}
-
-.row-full-vw {
-    justify-content: space-between;
-    align-items: flex-start;
 }
 
 /* ------------------------------------------------SIDEBAR------------------------------------------------- */
@@ -266,6 +264,15 @@ html {
     right: 5rem;
 }
 
+.whitespace {
+    background-color: rgba(255, 255, 255, 0);
+    height: 5rem;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+
 .body-card>div {
     width: 100%;
 }
@@ -302,7 +309,7 @@ html {
 .headshot>img {
     width: auto;
     height: 350px;
-    border-radius: 35px;
+    border-radius: 40px;
 }
 
 .headshot-img {
