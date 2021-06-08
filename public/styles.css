@@ -28,6 +28,12 @@ html {
     src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
 }
 
+/* --------------------------------------------------APP--------------------------------------------------- */
+
+.app {
+    position: relative;
+}
+
 /* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
 
 @media (max-width: 1520px) {
@@ -83,7 +89,7 @@ html {
 /* ------------------------------------------------SIDEBAR------------------------------------------------- */
 
 .sidebar {
-    position: sticky;
+    position: fixed;
     background-color: rgba(255, 255, 255, .45);
     border-radius: 55px;
 }
@@ -150,7 +156,7 @@ html {
     font-size: 1.2rem;
 }
 
-.nav-link { 
+.nav-link {
     position: absolute;
     top: 0;
     right: 0;
@@ -160,7 +166,7 @@ html {
     width: 100%;
 }
 
-.current-tab { 
+.current-tab {
     display: flex;
 }
 
@@ -184,6 +190,11 @@ html {
 }
 
 /* -----------------------------------------------HOMECARD------------------------------------------------- */
+
+.home-card {
+    position: absolute;
+    right: 5rem;
+}
 
 .home-card>div {
     width: 100%;
@@ -251,6 +262,8 @@ html {
 .body-card {
     background-color: rgba(252, 245, 219, .30);
     border-radius: 55px;
+    position: absolute;
+    right: 5rem;
 }
 
 .body-card>div {

@@ -7,7 +7,7 @@ import { Switch, Route } from 'react-router-dom';
 function App() {
     return <div className="my-row row-full-vw app">
         <Sidebar />
-        <Main />
+        <Main className="main-content"/>
     </div>
 }
 
