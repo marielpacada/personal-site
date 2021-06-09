@@ -283,21 +283,6 @@ html {
     padding: 0 3rem;
 }
 
-.body-content {
-    background-color: rgba(255, 255, 255, .40);
-    font-size: 1.15rem;
-    font-family: "montserrat-regular", sans-serif;
-    padding: 5rem 7rem;
-    border-radius: 55px;
-    line-height: 2rem;
-}
-
-.body-content>a:hover {
-    filter: saturate(2);
-    color: gray;
-    transition: color 0.3s ease;
-}
-
 /* -----------------------------------------------HEADSHOT------------------------------------------------- */
 
 .headshot {
@@ -334,28 +319,46 @@ html {
     transition: color 0.3s ease;
 }
 
+.about-content {
+    background-color: rgba(255, 255, 255, .40);
+    font-size: 1.15rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding: 5rem 7rem;
+    border-radius: 55px;
+    line-height: 2rem;
+}
+
+.about-content>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
 /* -----------------------------------------------PROJECTS------------------------------------------------- */
 
 .project-card {
-    width: 25rem;
-    position: relative;
+    margin: 2rem 3rem;
+    width: calc(50% - 4.5rem);
 }
 
-.project-img {
+.project-cover {
     width: 100%;
-    height: auto;
-    border-radius: 45px;
+    height: 12rem;
+    background-color: white;
+    font-size: 5rem;
+    opacity: 0.2;
+    transition: 0.7s ease;
+    border-radius: 40px 40px 0 0;
 }
-
-/* just blur the project-image instead of using backdrop-filter */
 
 .project-desc {
-    background-color: white;
     width: 100%;
-    height: 40%;
-    position: absolute;
-    bottom: 0;
-    opacity: .5;
-    backdrop-filter: blur(20px);
-    border-radius: 0 0 45px 45px;
+    height: 4rem;
+    background-color: white;
+    border-radius: 0 0 40px 40px;
+}
+
+.project-cover:hover {
+    background-color: #FADADD;
+    opacity: 1;
 }

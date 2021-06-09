@@ -1,7 +1,7 @@
 import Headshot from "../about/Headshot";
 
-const aboutMeText = <>
-    <div className="body-content top-left-align my-col">
+const aboutMe = <>
+    <div className="about-content top-left-align my-col">
         <Headshot />
         <p className="about-bio">
             If you needed living proof that it takes a village to raise a child, you’re looking right at her! Raised in
@@ -23,4 +23,4 @@ const aboutMeText = <>
     </div>
 </>;
 
-export default aboutMeText;
+export default aboutMe;

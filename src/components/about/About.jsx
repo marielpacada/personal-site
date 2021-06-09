@@ -1,11 +1,11 @@
 import React from "react";
 import BodyCard from "../BodyCard";
-import aboutMeText from "../content/about";
+import aboutMe from "../content/about";
 
 function About() {
     return (
         <div>
-            <BodyCard greeting="nice to meet you!" html={aboutMeText} />
+            <BodyCard greeting="nice to meet you!" html={aboutMe} />
         </div>
     );
 }

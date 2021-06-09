@@ -2,9 +2,9 @@ import React from "react";
 
 function ProjectCard() {
     return (
-        <div className="project-card">
-            <img className="project-img" src={process.env.PUBLIC_URL + '/images/head.jpg'} alt="heart, mariel pacada" />
-            <div className="project-desc"></div>
+        <div className="project-card my-col">
+            <div className="project-cover my-row center-align">🍭</div>
+            <div className="project-desc my-col start-center-align"></div>
         </div>
     );
 }
