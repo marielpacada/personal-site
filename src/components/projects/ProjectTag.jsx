@@ -1,10 +1,8 @@
 import React from "react";
 
-function ProjectTag() {
+function ProjectTag(props) {
     return (
-        <div>
-            
-        </div>
+        <div className="project-tag">{props.tag}</div>
     );
 }
 

@@ -1,10 +1,19 @@
-import ProjectCard from "../projects/ProjectCard";
-import ProjectTag from "../projects/ProjectTag";
-// THIS FILE SHOULD JUST CONTAIN AN OBJECT CONTAINING PROJECTS AND THE CORRESPONDING INFO
+const projects = [
 
-const myProjects = <>
-    <ProjectCard />
-    <ProjectTag/>
-</>;
+    {
+        key: 1,
+        title: "Simple Colors API",
+        emoji: "🍭",
+        tags: ["product"]
+    },
 
-export default myProjects;
+    {
+        key: 2,
+        title: "Learn Baybayin",
+        emoji: "🇵🇭",
+        tags: ["machine learning", "development"]
+    }
+
+];
+
+export default projects;
