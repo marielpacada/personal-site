@@ -115,7 +115,6 @@ html {
     border-radius: 15px;
     margin-bottom: .7rem;
     color: gray;
-    transition: color .3s ease;
     position: relative;
     z-index: 1;
 }
@@ -314,6 +313,11 @@ html {
 
 .headshot-img {
     margin-left: -4rem;
+    z-index: 1;
+}
+
+.headshot-under {
+    filter: opacity(.5);
 }
 
 /* -------------------------------------------------ABOUT-------------------------------------------------- */
@@ -328,4 +332,30 @@ html {
     filter: saturate(2);
     color: gray;
     transition: color 0.3s ease;
+}
+
+/* -----------------------------------------------PROJECTS------------------------------------------------- */
+
+.project-card {
+    width: 25rem;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 45px;
+}
+
+/* just blur the project-image instead of using backdrop-filter */
+
+.project-desc {
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    opacity: .5;
+    backdrop-filter: blur(20px);
+    border-radius: 0 0 45px 45px;
 }
