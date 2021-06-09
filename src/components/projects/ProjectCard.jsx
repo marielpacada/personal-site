@@ -8,7 +8,15 @@ function ProjectCard(props) {
             <div className="project-cover my-row even-space-align">
                 <p>{props.emoji}</p>
                 <div className="project-tag-div my-col even-space-align">
-                    {props.tags && (props.tags).map((tag, index) => { return <ProjectTag tag={tag} key={index} /> })}
+                    {props.tags && (props.tags).map((tag, index) => {
+                        return (
+                            <ProjectTag
+                                category={tag.split(" ")[0]}
+                                tag={tag}
+                                key={index}
+                            />
+                        );
+                    })}
                 </div>
             </div>
         </div>

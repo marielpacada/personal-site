@@ -12,6 +12,13 @@ const projects = [
         title: "Learn Baybayin",
         emoji: "🇵🇭",
         tags: ["machine learning", "development"]
+    },
+
+    {
+        key: 3,
+        title: "Melodate",
+        emoji: "🎶",
+        tags: ["product", "development", "design"]
     }
 
 ];
