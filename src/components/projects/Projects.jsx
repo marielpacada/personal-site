@@ -3,17 +3,22 @@ import BodyCard from "../BodyCard";
 import ProjectCard from "./ProjectCard";
 import projects from "../content/projects";
 
-const myProjects = projects.map((prj) => {
-    return (
-        <ProjectCard
-            title={prj.title}
-            emoji={prj.emoji}
-            tags={prj.tags}
-            key={prj.key}
-        />
-    );
-});
-
+const myProjects =
+    <>
+        <div className="project-body my-row even-space-align">
+            {projects.map((prj) => {
+                return (
+                    <ProjectCard
+                        title={prj.title}
+                        emoji={prj.emoji}
+                        color={prj.color}
+                        tags={prj.tags}
+                        key={prj.key}
+                    />
+                )
+            })}
+        </div>
+    </>;
 
 function Projects() {
     return (

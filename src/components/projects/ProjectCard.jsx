@@ -5,9 +5,9 @@ function ProjectCard(props) {
     return (
         <div className="project-card my-col">
             <div className="project-title my-row start-center-align">{props.title}</div>
-            <div className="project-cover my-row even-space-align">
-                <p>{props.emoji}</p>
-                <div className="project-tag-div my-col even-space-align">
+            <div className="project-cover my-row even-space-align" my-color={props.color}>
+                <div className="project-emoji-div my-row center-align">{props.emoji}</div>
+                <div className="project-tag-div my-col top-left-align">
                     {props.tags && (props.tags).map((tag, index) => {
                         return (
                             <ProjectTag
