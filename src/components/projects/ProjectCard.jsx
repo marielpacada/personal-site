@@ -1,24 +1,15 @@
 import React from "react";
-import ProjectTag from "./ProjectTag";
+
+
+// you would put code for tag circles here! in the project-title -- 
+// make it contain div of title text and then div of the circles :)
+
 
 function ProjectCard(props) {
     return (
-        <div className="project-card my-col">
+        <div className="project-card my-col" url={props.url}>
             <div className="project-title my-row start-center-align">{props.title}</div>
-            <div className="project-cover my-row even-space-align" my-color={props.color}>
-                <div className="project-emoji-div my-row center-align">{props.emoji}</div>
-                <div className="project-tag-div my-col top-left-align">
-                    {props.tags && (props.tags).map((tag, index) => {
-                        return (
-                            <ProjectTag
-                                category={tag.split(" ")[0]}
-                                tag={tag}
-                                key={index}
-                            />
-                        );
-                    })}
-                </div>
-            </div>
+            <div className="project-cover my-row center-align" my-color={props.color}>{props.emoji}</div>
         </div>
     );
 }

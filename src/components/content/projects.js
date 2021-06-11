@@ -5,7 +5,8 @@ const projects = [
         title: "Simple Colors API",
         emoji: "🍭",
         color: "#E7B1BC",
-        tags: ["product"]
+        tags: ["product"],
+        url: 'https://simple-colors-api.herokuapp.com/'
     },
 
     {
@@ -13,7 +14,8 @@ const projects = [
         title: "Learn Baybayin",
         emoji: "🇵🇭",
         color: "#C9B1E7",
-        tags: ["machine learning", "development"]
+        tags: ["machine learning", "development"],
+        url: 'https://marielpacada.github.io/learn-baybayin/'
     },
 
     {
@@ -21,7 +23,8 @@ const projects = [
         title: "Melodate",
         emoji: "🎶",
         color: "#BFD3B2",
-        tags: ["product", "development", "design"]
+        tags: ["product", "development", "design"],
+        url: 'https://github.com/marielpacada/melodate'
     },
 
     {
@@ -29,7 +32,8 @@ const projects = [
         title: "DashDash Code",
         emoji: "📮",
         color: "#FEDD9A",
-        tags: ["product", "development", "design"]
+        tags: ["product", "development", "design"],
+        url: 'https://marielpacada.github.io/dashdash-code/'
     },
 
     {
@@ -37,7 +41,8 @@ const projects = [
         title: "Mental Health in Tech",
         emoji: "💼",
         color: "#D6D8D4",
-        tags: ["data analysis", "machine learning"]
+        tags: ["data analysis", "machine learning"],
+        url: 'https://marielpacada.github.io/mental-health-in-tech/'
     },
 
     {
@@ -45,7 +50,8 @@ const projects = [
         title: "Ukutabs Redesign",
         emoji: "🌺",
         color: "#E58AA5",
-        tags: ["design"]
+        tags: ["design"],
+        url: 'https://radiant-brushlands-46105.herokuapp.com/'
     },
 
     {
@@ -53,7 +59,8 @@ const projects = [
         title: "Window Shopper",
         emoji: "🧮",
         color: "#F7BB8D",
-        tags: ["product", "development", "design"]
+        tags: ["product", "development", "design"],
+        url: 'https://github.com/marielpacada/window-shopper'
     },
 
     {
@@ -61,7 +68,8 @@ const projects = [
         title: "Hate Crimes in the US",
         emoji: "🇺🇸",
         color: "#91B2CA",
-        tags: ["data analysis"]
+        tags: ["data analysis"],
+        url: 'https://marielpacada.github.io/us-hate-crime/'
     }
 
 ];

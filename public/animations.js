@@ -1,8 +1,6 @@
 /* eslint-env jquery */
 $(function () {
 
-
-
     $(".project-cover").on({
         mouseenter: function () { colorizeBackground($(this)); },
         mouseleave: function () { decolorizeBackground($(this)); }
@@ -21,9 +19,10 @@ $(function () {
         obj.css({ "background-color": "rgba(255, 255, 255, .20)" });
     }
 
-
-
-
+    $(".project-card").on("click", function() {
+        window.open($(this).attr("url"));
+    });
 
 
 });
+
