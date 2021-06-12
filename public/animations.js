@@ -6,7 +6,7 @@ $(function () {
         mouseleave: function () { decolorizeBackground($(this)); }
     });
 
-    $(".project-title").on({
+    $(".project-title-div").on({
         mouseenter: function () { colorizeBackground($(this).next()); },
         mouseleave: function () { decolorizeBackground($(this).next()); }
     });
@@ -19,10 +19,9 @@ $(function () {
         obj.css({ "background-color": "rgba(255, 255, 255, .20)" });
     }
 
-    $(".project-card").on("click", function() {
+    $(".project-card").on("click", function () {
         window.open($(this).attr("url"));
     });
-
 
 });
 

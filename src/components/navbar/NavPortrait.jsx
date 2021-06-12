@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 function NavPortrait() {
     return <div className="portrait my-row center-align">
-        <NavLink exact className="nav-link" activeClassName="current-tab" to="/" />
-        <img src="images/pengwing.png" alt="portrait" className="nav-img" />
+        <NavLink exact className="nav-link" to="/" />
+        <img src="images/nav-head.png" alt="portrait by iman" className="nav-img" />
     </div>;
 }
 
