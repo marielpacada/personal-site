@@ -2,6 +2,7 @@ import React from "react";
 import Typewriter from 'typewriter-effect';
 
 function HomeCard() {
+    var start = true;
     return (
         <div className="home-card my-col top-left-align">
             <div className="home-top my-col center-align">
@@ -17,8 +18,8 @@ function HomeCard() {
                                     .typeString(" ariel?")
                                     .pauseFor(1800)
                                     .deleteChars(6)
-                                    .typeString("mariel!")
-                                    .start();
+                                    .typeString("mariel!");
+                                start && typewriter.start();
                             }}
                         />
                     </div>
@@ -27,11 +28,11 @@ function HomeCard() {
                             options={{ cursor: '', delay: 20 }}
                             onInit={(typewriter) => {
                                 typewriter
-                                    .pauseFor(2600)
-                                    .typeString("like the little mermaid")
                                     .pauseFor(2500)
+                                    .typeString("like the little mermaid")
+                                    .pauseFor(2400)
                                     .typeString(' with an "m" before.')
-                                    .start();
+                                start && typewriter.start();
                             }}
                         />
                     </div>
