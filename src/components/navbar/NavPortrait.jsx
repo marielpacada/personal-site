@@ -1,11 +1,18 @@
 import React from "react";
-import { NavLink } from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
 function NavPortrait() {
-    return <div className="portrait my-row center-align">
-        <NavLink exact className="nav-link" to="/" />
-        <img src="images/nav-head.png" alt="portrait by iman" className="nav-img" />
-    </div>;
+    const history = useHistory();
+    return (
+        <img
+            src="images/memoji/m1.png"
+            alt="mariel's apple memoji"
+            className="portrait"
+            onMouseOver={e => (e.currentTarget.src = "images/memoji/m2.png")}
+            onMouseOut={e => (e.currentTarget.src = "images/memoji/m1.png")}
+            onClick={() => history.push('/')}
+        />
+    );
 }
 
 export default NavPortrait;

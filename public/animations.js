@@ -23,5 +23,9 @@ $(function () {
         window.open($(this).attr("url"));
     });
 
+    $(".contact-icon").on("click", function () {
+        window.open($(this).attr("url"));
+    });
+
 });
 

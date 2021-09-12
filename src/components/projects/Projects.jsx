@@ -13,7 +13,7 @@ const myProjects =
             <ProjectTag tag="machine learning" />
             <ProjectTag tag="data analysis" />
         </div>
-        <div className="project-body my-row even-space-align">
+        <div className="content-body my-row even-space-align">
             {projects.map((prj) => {
                 return (
                     <ProjectCard
