@@ -6,7 +6,8 @@ const projects = [
         emoji: "🍭",
         color: "#E7B1BC",
         tags: ["product"],
-        url: 'https://simple-colors-api.herokuapp.com/'
+        url: 'https://simple-colors-api.herokuapp.com/',
+        description: 'A RESTful API that allows the developer to categorize 140 web colors into simple color groups'
     },
 
     {
@@ -15,7 +16,8 @@ const projects = [
         emoji: "🇵🇭",
         color: "#C9B1E7",
         tags: ["machine learning", "development"],
-        url: 'https://marielpacada.github.io/learn-baybayin/'
+        url: 'https://marielpacada.github.io/learn-baybayin/',
+        description: 'An educational tool for teaching how to write in Baybayin, a pre-colonial script from the Philippines'
     },
 
     {
@@ -24,7 +26,8 @@ const projects = [
         emoji: "🎶",
         color: "#BFD3B2",
         tags: ["product", "development", "design"],
-        url: 'https://github.com/marielpacada/melodate'
+        url: 'https://github.com/marielpacada/melodate',
+        description: 'A dating-app-esque experience that allows the user to discover new artists (think Spotify Tinder)'
     },
 
     {
@@ -33,7 +36,8 @@ const projects = [
         emoji: "📮",
         color: "#FEDD9A",
         tags: ["product", "development", "design"],
-        url: 'https://marielpacada.github.io/dashdash-code/'
+        url: 'https://marielpacada.github.io/dashdash-code/',
+        description: 'A web application that helps the user learn Morse code with a customizable mnemonic system'
     },
 
     {
@@ -42,7 +46,8 @@ const projects = [
         emoji: "💼",
         color: "#D6D8D4",
         tags: ["data analysis", "machine learning"],
-        url: 'https://marielpacada.github.io/mental-health-in-tech/'
+        url: 'https://marielpacada.github.io/mental-health-in-tech/',
+        description: 'Correlational and classification analysis on mental health within the tech industry'
     },
 
     {
@@ -51,7 +56,8 @@ const projects = [
         emoji: "🌺",
         color: "#E58AA5",
         tags: ["design"],
-        url: 'https://radiant-brushlands-46105.herokuapp.com/'
+        url: 'https://radiant-brushlands-46105.herokuapp.com/',
+        description: 'A complete redesign of website ukutabs.com, improving usability and accessibility'
     },
 
     {
@@ -60,7 +66,8 @@ const projects = [
         emoji: "🧮",
         color: "#F7BB8D",
         tags: ["product", "development", "design"],
-        url: 'https://github.com/marielpacada/window-shopper'
+        url: 'https://github.com/marielpacada/window-shopper',
+        description: "A mobile application that calculates the hours needed to afford an item, given the user's wage"
     },
 
     {
@@ -69,7 +76,8 @@ const projects = [
         emoji: "🇺🇸",
         color: "#91B2CA",
         tags: ["data analysis"],
-        url: 'https://marielpacada.github.io/us-hate-crime/'
+        url: 'https://marielpacada.github.io/us-hate-crime/',
+        description: 'Exploratory data analysis on the prevalence of hate crimes in the US amid the 2016 election'
     }
 
 ];

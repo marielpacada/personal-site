@@ -404,6 +404,24 @@ html {
     font-size: x-large;
 }
 
+.project-emoji {
+    transition: 0.5s ease;
+}
+
+.project-desc {
+    opacity: 0;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 20px;
+    font-family: "montserrat-regular", sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .60);
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
 /* ---------------------------------------------PROJECT TAG------------------------------------------------ */
 
 .project-tag {
@@ -471,7 +489,7 @@ html {
     opacity: .5;
 }
 
-.contact-title { 
+.contact-title {
     font-family: "montserrat-regular", sans-serif;
     color: white;
 }

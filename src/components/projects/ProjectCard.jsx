@@ -12,7 +12,12 @@ function ProjectCard(props) {
                     {props.tags.map((tag, index) => { return (<ProjectDot tagName={tag} key={index} />); })}
                 </div>
             </div>
-            <div className="project-cover my-row center-align" my-color={props.color}>{props.emoji}</div>
+            <div className="project-cover my-row center-align" my-color={props.color}>
+                <div className="project-emoji">{props.emoji}</div>
+                <div className="project-desc my-row center-align">
+                    {props.desc}
+                </div>
+            </div>
         </div>
     );
 }

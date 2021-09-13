@@ -23,6 +23,7 @@ const myProjects =
                         tags={prj.tags}
                         key={prj.key}
                         url={prj.url}
+                        desc={prj.description}
                     />
                 )
             })}
