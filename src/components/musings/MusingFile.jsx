@@ -1,15 +1,19 @@
 import React from "react";
-import MusingPreview from "./MusingPreview";
 
 function MusingFile(props) {
     return (
-        <MusingPreview
-            title={props.title}
-            date={props.date}
-            subheading={props.subheading}
-        />
+        <div className="note-file my-col start-align">
+            <div className="file-title">
+                {props.title}
+            </div>
+            <div className="file-date">
+                {props.date}
+            </div>
+            <div className="file-subheading">
+                {props.subheading}
+            </div>
+        </div>
     );
 }
-
 
 export default MusingFile;

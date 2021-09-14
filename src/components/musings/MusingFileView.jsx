@@ -3,7 +3,7 @@ import MusingFile from "./MusingFile";
 import musings from "../content/musings";
 
 
-function MusingFolderView(props) {
+function MusingFileView(props) {
     return (
         <div className="note-folder">
             {musings.map((note) => {
@@ -24,4 +24,4 @@ function MusingFolderView(props) {
 }
 
 
-export default MusingFolderView;
+export default MusingFileView;
