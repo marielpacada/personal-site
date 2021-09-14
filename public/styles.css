@@ -493,3 +493,44 @@ html {
     font-family: "montserrat-regular", sans-serif;
     color: white;
 }
+
+/* ------------------------------------------------MUSINGS------------------------------------------------- */
+
+.note-app {
+    width: 90%;
+    height: calc(80vh - 8.3rem);
+    border-radius: 55px;
+}
+
+.note-folder {
+    background-color: rgba(255, 255, 255, .30);
+    height: 100%;
+    width: 30%;
+    border-radius: 55px 0 0 55px;
+}
+
+.note-body {
+    height: 100%;
+    width: 70%;
+    background-color: rgba(255, 255, 255, .10);
+    border-radius: 0 55px 55px 0;
+}
+
+.note-file {
+    height: 7rem;
+    background-color: rgba(255, 255, 255, .20);
+    border-bottom: 1px dashed #73726e;
+    padding: 1.5rem 1rem 1rem;
+}
+
+.file-title {
+    font-family: "montserrat", sans-serif;
+    font-size: 1rem;
+    margin-bottom: .7rem;
+}
+
+.file-subheading {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: .8rem;
+    color: #5c5b58;
+}

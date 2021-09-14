@@ -14,7 +14,6 @@ $(function () {
         }
     });
 
-
     /**
      * This allows the hover effect to work for the project-cover when hovering over the title div
      */
