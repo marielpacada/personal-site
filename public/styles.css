@@ -497,40 +497,52 @@ html {
 /* ------------------------------------------------MUSINGS------------------------------------------------- */
 
 .note-app {
-    width: 90%;
+    width: 93%;
     height: calc(80vh - 8.3rem);
-    border-radius: 55px;
 }
 
 .note-folder {
-    background-color: rgba(255, 255, 255, .30);
+    background-color: rgba(255, 255, 255, .20);
     height: 100%;
     width: 30%;
-    border-radius: 55px 0 0 55px;
+    border-radius: 25px 0 0 25px;
 }
 
 .note-body {
     height: 100%;
     width: 70%;
     background-color: rgba(255, 255, 255, .10);
-    border-radius: 0 55px 55px 0;
+    border-radius: 0 25px 25px 0;
 }
 
 .note-file {
-    height: 7rem;
+    height: 8rem;
     background-color: rgba(255, 255, 255, .20);
     border-bottom: 1px dashed #73726e;
     padding: 1.5rem 1rem 1rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.note-file:hover {
+    background-color: rgba(255, 255, 255, .70);
 }
 
 .file-title {
     font-family: "montserrat", sans-serif;
     font-size: 1rem;
-    margin-bottom: .7rem;
+    margin-bottom: .25rem;
 }
 
 .file-subheading {
     font-family: "montserrat-regular", sans-serif;
     font-size: .8rem;
+    font-style: italic;
+}
+
+.file-date {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: .7rem;
     color: #5c5b58;
+    margin-bottom: .7rem;
 }

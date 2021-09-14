@@ -64,5 +64,9 @@ $(function () {
         window.open($(this).attr("url"));
     });
 
-});
+    // get the first note file and change border of top left (first one)
+    $(".note-file").first().css({
+        "border-radius": "25px 0 0 0"
+    });
 
+});

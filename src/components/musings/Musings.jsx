@@ -1,12 +1,15 @@
 import React from 'react';
 import BodyCard from "../BodyCard";
-import MusingContainer from './MusingContainer';
+import MusingFolderView from './MusingFolderView';
+import MusingContentView from './MusingContentView';
 
 const myMusings =
     <>
         <div className="content-body my-row center-align">
-
-            <MusingContainer />
+            <div className="note-app my-row start-align">
+                <MusingFolderView />
+                <MusingContentView />
+            </div>
         </div>
     </>
 

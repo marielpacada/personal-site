@@ -1,9 +1,9 @@
 import React from "react";
 
-function MusingPiece(props) {
+function MusingContentView(props) {
     return (
         <div className="note-body">
-            
+
         </div>
 
 
@@ -12,4 +12,4 @@ function MusingPiece(props) {
 }
 
 
-export default MusingPiece;
+export default MusingContentView;
