@@ -501,14 +501,14 @@ html {
     height: calc(80vh - 8.3rem);
 }
 
-.note-folder {
+.note-file-div {
     background-color: rgba(255, 255, 255, .20);
     height: 100%;
     width: 30%;
     border-radius: 25px 0 0 25px;
 }
 
-.note-body {
+.note-content-div {
     height: 100%;
     width: 70%;
     background-color: rgba(255, 255, 255, .10);
@@ -517,11 +517,24 @@ html {
 
 .note-file {
     height: 8rem;
+    width: 100%;
     background-color: rgba(255, 255, 255, .20);
     border-bottom: 1px dashed #73726e;
     padding: 1.5rem 1rem 1rem;
     cursor: pointer;
     transition: 0.25s ease;
+}
+
+.note-content {
+    position: absolute;
+}
+
+.shown {
+    display: auto;
+}
+
+.hidden {
+    display: none;
 }
 
 .note-file:hover {

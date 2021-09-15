@@ -27,17 +27,17 @@ const growth =
             <br />
             <br />
             I don’t know what makes me doubt by capacity for growth these days, but it sure does manifest a great
-            departure from my feelings as a toddler all those years ago.I’ve realized that I’m often put off by the
-            first mistake I make when I attempt a new hobby or new technology.I’m still learning how to overcome this
-            shortcoming, and I think my recent work communicates how much I prioritize this task.I’ve been honing new
-            technical skills that I’ve previously avoided because of bad request errors and joining Clubhouse rooms
-            ready to ask questions without the fear of seeming like a simpleton.
+            departure from my feelings as a toddler all those years ago. I’ve realized that I’m often put off by the
+            first mistake I make when I attempt a new hobby or new technology. I’m still learning how to overcome this
+            shortcoming, and I think my recent work communicates how much I prioritize this task. I’ve been honing new
+            technical skills that I’ve previously avoided because of bad request errors and trying new crochet patterns
+            with the tenacity to start over when needed.
             <br />
             <br />
             What had been intrinsic to me in the past is something I need to work a little bit harder to internalize
-            today — one is guaranteed to learn so long as one stays committed to doing so.Just as I had pushed past my
+            today — one is guaranteed to learn so long as one stays committed to doing so. Just as I had pushed past my
             initial blunder and eventually learned how to properly spell “love,” I trust that I’ll someday soundly
-            crochet a sweater or keep a house plant from wilting.I just need to keep at it, whatever “it’ is, and carry
+            crochet a sweater or keep a house plant from wilting. I just need to keep at it, whatever “it’ is, and carry
             Toddler Mariel’s wisdom with me in all my endeavors.
         </p>
     </>

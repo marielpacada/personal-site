@@ -69,4 +69,19 @@ $(function () {
         "border-radius": "25px 0 0 0"
     });
 
+    $(".note-file-div").on("click", function () {
+
+        // note content should show
+        // which means we remove the hidden class and add the shown class
+        // how do we get the corresponding one?
+        // we get the sibling with next, and we get the first child 
+        // we can use slice like last time :)
+
+        // clear the div first and then show :)
+        $(".note-content").children().css({ "display": "none" });
+    });
+
+
+
+
 });

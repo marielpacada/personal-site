@@ -2,8 +2,8 @@ import React from "react";
 
 function MusingContent(props) {
     return (
-        <div>
-
+        <div className="note-content hidden">
+            {props.text}
         </div>
     );
 }
