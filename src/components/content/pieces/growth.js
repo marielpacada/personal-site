@@ -40,6 +40,6 @@ const growth =
             crochet a sweater or keep a house plant from wilting. I just need to keep at it, whatever “it’ is, and carry
             Toddler Mariel’s wisdom with me in all my endeavors.
         </p>
-    </>
+    </>;
 
 export default growth;
