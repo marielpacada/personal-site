@@ -1,0 +1,577 @@
+/* --------------------------------------------------META-------------------------------------------------- */
+
+html {
+    background: url("images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+}
+
+/* -------------------------------------------------FONTS-------------------------------------------------- */
+
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-semi";
+    src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
+/* --------------------------------------------------APP--------------------------------------------------- */
+
+.app {
+    position: relative;
+}
+
+/* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
+
+@media (max-width: 1520px) {
+    .app {
+        width: 100vw;
+        padding: 4.5rem;
+    }
+    .sidebar {
+        width: 18rem;
+        height: 80vh;
+    }
+    /* calc(viewport - sidebar - padding both sides - space between sidebar and card) */
+    .home-card {
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
+        height: 80vh;
+    }
+    .body-card {
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
+    }
+}
+
+/* ----------------------------------------------ROW AND COL----------------------------------------------- */
+
+.my-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.my-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-align {
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left-align {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.start-center-align {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.even-space-align {
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.space-btwn-align {
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ------------------------------------------------SIDEBAR------------------------------------------------- */
+
+.sidebar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 55px;
+}
+
+.sidebar>div:hover {
+    cursor: pointer;
+}
+
+.footer {
+    position: fixed;
+    bottom: 3.5rem;
+    left: 10.5rem;
+    font-family: "montserrat-regular";
+    color: black;
+    font-style: italic;
+    font-size: x-small;
+}
+
+/* ----------------------------------------------NAV BUTTON------------------------------------------------ */
+
+.tab-icon {
+    text-align: center;
+    width: 15%;
+    margin-right: .75rem;
+}
+
+.tab-name {
+    margin: 3px;
+}
+
+.nav-button {
+    font-family: "montserrat-regular", sans-serif;
+    width: 70%;
+    padding: .7rem;
+    border-radius: 15px;
+    margin-bottom: .7rem;
+    color: gray;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-button-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/btn-bg.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s ease;
+    margin: 0 !important;
+}
+
+.nav-button:hover {
+    color: white;
+}
+
+.nav-button:hover .nav-button-overlay, .nav-button-overlay:hover {
+    opacity: 1;
+}
+
+.nav-button>div {
+    margin-left: .5rem;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.current-tab {
+    background-image: url("images/btn-bg.jpg");
+    background-size: cover;
+    z-index: -1;
+    border-radius: 15px;
+    color: white;
+}
+
+.current-tab~.tab-icon, .current-tab~.tab-name {
+    color: white;
+}
+
+/* ---------------------------------------------NAV PORTRAIT----------------------------------------------- */
+
+.portrait {
+    position: relative;
+    width: 80%;
+    height: auto;
+    margin: 2.8rem 0;
+}
+
+.portrait:hover {
+    cursor: pointer;
+}
+
+/* -----------------------------------------------HOMECARD------------------------------------------------- */
+
+.home-card {
+    position: absolute;
+    right: 5rem;
+}
+
+.home-card>div {
+    width: 100%;
+}
+
+.home-top {
+    height: 75%;
+    border-radius: 55px 55px 0 0;
+    background-color: rgba(255, 255, 255, .28);
+}
+
+.home-bottom {
+    height: 25%;
+    background-color: rgba(240, 217, 174, 0.9);
+    border-radius: 0 0 55px 55px;
+}
+
+.flower-symbol {
+    margin-top: 2rem;
+    height: 150px;
+}
+
+/* -----------------------------------------------TYPEWRITER----------------------------------------------- */
+
+.typewriter {
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+}
+
+.type-head {
+    font-size: 3rem;
+    font-family: "montserrat", sans-serif;
+    color: #18516A;
+    margin-bottom: 2rem;
+}
+
+.type-subhead {
+    font-size: 1rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------------------------------BYLINE-------------------------------------------------- */
+
+.byline {
+    font-size: 1.2rem;
+    font-family: Courier, sans-serif;
+}
+
+.byline>p>a {
+    background-color: #FADADD;
+    text-decoration: underline;
+    color: black;
+}
+
+.byline>p>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+/* -----------------------------------------------BODYCARD------------------------------------------------- */
+
+.body-card {
+    background-color: rgba(252, 245, 219, .30);
+    border-radius: 55px;
+    position: absolute;
+    right: 5rem;
+}
+
+.whitespace {
+    background-color: rgba(255, 255, 255, 0);
+    height: 10vh;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+
+.body-card>div {
+    width: 100%;
+}
+
+.greeting {
+    font-size: 2rem;
+    font-family: "montserrat", sans-serif;
+    color: #18516A;
+    padding: 0 3rem;
+}
+
+/* -----------------------------------------------HEADSHOT------------------------------------------------- */
+
+.headshot {
+    margin: 0 auto 4rem auto;
+    display: flex;
+}
+
+.headshot>img {
+    width: auto;
+    height: 350px;
+    border-radius: 40px;
+}
+
+.headshot-img {
+    margin-left: -4rem;
+    z-index: 1;
+}
+
+.headshot-under {
+    filter: opacity(.5);
+}
+
+/* -------------------------------------------------ABOUT-------------------------------------------------- */
+
+.about-bio>a {
+    background-color: #FADADD;
+    text-decoration: underline;
+    color: black;
+}
+
+.about-bio>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+.about-content {
+    background-color: rgba(255, 255, 255, .40);
+    font-size: 1.15rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding: 5rem 7rem;
+    border-radius: 55px;
+    line-height: 2rem;
+}
+
+.about-content>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+/* ------------------------------------------------CONTENT------------------------------------------------- */
+
+.content-body {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+}
+
+/* ---------------------------------------------PROJECT CARD----------------------------------------------- */
+
+.project-card {
+    margin: 2rem 0;
+    width: calc(50% - 4.5rem);
+    flex-direction: column-reverse;
+}
+
+.project-card:hover {
+    cursor: pointer;
+}
+
+.project-cover {
+    width: 100%;
+    height: 12rem;
+    background-color: rgba(255, 255, 255, .20);
+    font-size: 5rem;
+    transition: 0.5s ease;
+    border-radius: 40px 40px 0 0;
+}
+
+.project-tag-div {
+    height: auto;
+    width: 100%;
+    padding: 0 3rem 1rem;
+}
+
+.project-title-div {
+    width: 100%;
+    height: 4.5rem;
+    background-color: rgba(255, 255, 255, .70);
+    border-radius: 0 0 40px 40px;
+}
+
+.project-title {
+    height: 100%;
+    width: 80%;
+    padding-left: 2rem;
+    font-family: "montserrat", sans-serif;
+    font-size: x-large;
+}
+
+.project-emoji {
+    transition: 0.5s ease;
+}
+
+.project-desc {
+    opacity: 0;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 20px;
+    font-family: "montserrat-regular", sans-serif;
+    text-align: center;
+    background-color: rgba(255, 255, 255, .60);
+    font-size: 1rem;
+    color: black;
+    position: absolute;
+    transition: 0.5s ease;
+}
+
+/* ---------------------------------------------PROJECT TAG------------------------------------------------ */
+
+.project-tag {
+    color: white;
+    padding: .3rem .6rem;
+    margin-top: .5rem;
+    font-family: sans-serif;
+    font-size: 1rem;
+    border-radius: 18px;
+    display: inline;
+    margin-right: 1rem;
+}
+
+.project-tag:hover {
+    cursor: default;
+}
+
+.product {
+    background-color: #937fa0;
+}
+
+.development {
+    background-color: #6883aa;
+}
+
+.design {
+    background-color: #e8986e;
+}
+
+.machine {
+    background-color: #ed8585;
+}
+
+.data {
+    background-color: #6b938b;
+}
+
+.project-dot {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    margin-right: .2rem;
+}
+
+.project-dot-div {
+    width: 20%;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 1rem;
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+/* ------------------------------------------------CONTACT------------------------------------------------- */
+
+.contact-icon {
+    height: 6.8rem;
+    width: 6.8rem;
+    border-radius: 30px;
+    margin-bottom: 1rem;
+    transition: opacity .3s ease;
+}
+
+.contact-icon:hover {
+    cursor: pointer;
+    opacity: .5;
+}
+
+.contact-title {
+    font-family: "montserrat-regular", sans-serif;
+    color: white;
+}
+
+/* ------------------------------------------------MUSINGS------------------------------------------------- */
+
+.note-app {
+    width: 93%;
+    height: calc(80vh - 8.3rem);
+}
+
+.note-file-div {
+    background-color: rgba(255, 255, 255, .20);
+    height: 100%;
+    width: 30%;
+    border-radius: 25px 0 0 25px;
+    overflow: hidden;
+}
+
+.note-file {
+    height: 8rem;
+    width: 100%;
+    background-color: rgba(255, 255, 255, .20);
+    border-bottom: 1px dashed #73726e;
+    padding: 1.5rem 1rem 1rem;
+    cursor: pointer;
+    transition: 0.25s ease;
+    overflow-y: scroll;
+}
+
+.note-content-div {
+    background-color: rgba(255, 255, 255, .10);
+    height: 100%;
+    width: 70%;
+    border-radius: 0 25px 25px 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.note-content {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: 15px;
+    position: absolute;
+    width: 100%;
+    padding: 2rem;
+    max-height: 100%;
+    overflow-y: scroll;
+}
+
+.content-title {
+    font-family: "montserrat", sans-serif;
+    font-size: 20px;
+    margin-bottom: 1rem;
+}
+
+.shown {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}
+
+.note-file:hover {
+    background-color: rgba(255, 255, 255, .70);
+}
+
+.file-title {
+    font-family: "montserrat", sans-serif;
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.file-subheading {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.file-date {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: .7rem;
+    color: #5c5b58;
+    margin-bottom: .7rem;
+}
