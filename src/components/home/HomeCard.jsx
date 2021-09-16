@@ -41,7 +41,7 @@ function HomeCard() {
 
             <div className="home-bottom my-row center-align">
                 <div className="byline">
-                    <p>current: <a href="https://cs.brown.edu/">brown</a> computer science</p>
+                    <p>current: <a href="https://cs.brown.edu/" target="_blank" rel="noreferrer">brown</a> computer science</p>
                 </div>
             </div>
         </div>
