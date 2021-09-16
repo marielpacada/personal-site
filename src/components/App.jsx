@@ -5,7 +5,7 @@ import About from "./about/About";
 import Contact from "./contact/Contact";
 import Projects from "./projects/Projects";
 import Musings from './musings/Musings';
-import { BrowserRouter, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router-dom';
 
 function App() {
     return (
@@ -17,13 +17,13 @@ function App() {
 }
 
 const Main = () => (
-    <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <Switch>
         <Route exact path='/' component={HomeCard}></Route>
         <Route exact path='/about' component={About}></Route>
         <Route exact path='/projects' component={Projects}></Route>
         <Route exact path='/musings' component={Musings}></Route>
         <Route exact path='/contact' component={Contact}></Route>
-    </BrowserRouter>
+    </Switch>
 );
 
 export default App;
