@@ -1,0 +1,362 @@
+/* --------------------------------------------------META-------------------------------------------------- */
+
+html {
+    background: url("images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+/* -------------------------------------------------FONTS-------------------------------------------------- */
+
+@font-face {
+    font-family: "montserrat";
+    src: url("/fonts/montserrat/Montserrat-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-regular";
+    src: url("/fonts/montserrat/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "montserrat-semi";
+    src: url("/fonts/montserrat/Montserrat-SemiBold.ttf");
+}
+
+/* --------------------------------------------------APP--------------------------------------------------- */
+
+.app {
+    position: relative;
+}
+
+/* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
+
+@media (max-width: 1520px) {
+    .app {
+        width: 100vw;
+        padding: 5rem;
+    }
+    .sidebar {
+        width: 18rem;
+        height: 80vh;
+    }
+    /* calc(viewport - sidebar - padding both sides - space between sidebar and card) */
+    .home-card {
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
+        height: 80vh;
+    }
+    .body-card {
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
+    }
+}
+
+/* ----------------------------------------------ROW AND COL----------------------------------------------- */
+
+.my-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.my-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.center-align {
+    justify-content: center;
+    align-items: center;
+}
+
+.top-left-align {
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.start-center-align {
+    justify-content: flex-start;
+    align-items: center;
+}
+
+/* ------------------------------------------------SIDEBAR------------------------------------------------- */
+
+.sidebar {
+    position: fixed;
+    background-color: rgba(255, 255, 255, .45);
+    border-radius: 55px;
+}
+
+.sidebar>div:hover {
+    cursor: pointer;
+}
+
+/* ----------------------------------------------NAV BUTTON------------------------------------------------ */
+
+.tab-icon {
+    text-align: center;
+    width: 15%;
+    margin-right: .75rem;
+}
+
+.tab-name {
+    margin: 3px;
+}
+
+.nav-button {
+    font-family: "montserrat-regular", sans-serif;
+    width: 70%;
+    padding: .7rem;
+    border-radius: 15px;
+    margin-bottom: .7rem;
+    color: gray;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-button-overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("images/btn-bg.jpg");
+    background-size: cover;
+    border-radius: 15px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s ease;
+    margin: 0 !important;
+}
+
+.nav-button:hover {
+    color: white;
+}
+
+.nav-button:hover .nav-button-overlay {
+    opacity: 1;
+}
+
+.nav-button-overlay:hover {
+    opacity: 1;
+}
+
+.nav-button>* {
+    margin-left: .5rem;
+    font-size: 1.2rem;
+}
+
+.nav-link {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.current-tab {
+    display: flex;
+}
+
+/* ---------------------------------------------NAV PORTRAIT----------------------------------------------- */
+
+.portrait {
+    position: relative;
+    width: 70%;
+    margin: 2.5rem 0;
+    border-radius: 40px;
+    transition: background-color 0.5s ease;
+}
+
+.portrait:hover {
+    background-color: #B57EDC;
+}
+
+.nav-img {
+    width: 80%;
+    height: auto;
+}
+
+/* -----------------------------------------------HOMECARD------------------------------------------------- */
+
+.home-card {
+    position: absolute;
+    right: 5rem;
+}
+
+.home-card>div {
+    width: 100%;
+}
+
+.home-top {
+    height: 70%;
+    border-radius: 55px 55px 0 0;
+    background-color: rgba(255, 255, 255, .28);
+}
+
+.home-bottom {
+    height: 30%;
+    background-color: rgba(255, 245, 219, .80);
+    border-radius: 0 0 55px 55px;
+}
+
+.memoji {
+    height: 200px;
+}
+
+/* -----------------------------------------------TYPEWRITER----------------------------------------------- */
+
+.typewriter {
+    flex-wrap: wrap;
+    width: 80%;
+    height: auto;
+}
+
+.type-head {
+    font-size: 3rem;
+    font-family: "montserrat", sans-serif;
+    color: #1E6685;
+    margin-bottom: 2rem;
+}
+
+.type-subhead {
+    font-size: 1rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ------------------------------------------------BYLINE-------------------------------------------------- */
+
+.byline {
+    font-size: 1.2rem;
+    font-family: Courier, sans-serif;
+}
+
+.byline>p>a {
+    background-color: #FADADD;
+    text-decoration: underline;
+    color: black;
+}
+
+.byline>p>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+/* -----------------------------------------------BODYCARD------------------------------------------------- */
+
+.body-card {
+    background-color: rgba(252, 245, 219, .30);
+    border-radius: 55px;
+    position: absolute;
+    right: 5rem;
+}
+
+.whitespace {
+    background-color: rgba(255, 255, 255, 0);
+    height: 5rem;
+    width: 100%;
+    margin: 0;
+    position: absolute;
+    top: 100%;
+}
+
+.body-card>div {
+    width: 100%;
+}
+
+.greeting {
+    font-size: 2rem;
+    font-family: "montserrat", sans-serif;
+    color: #1E6685;
+    padding: 0 3rem;
+}
+
+.body-content {
+    background-color: rgba(255, 255, 255, .40);
+    font-size: 1.15rem;
+    font-family: "montserrat-regular", sans-serif;
+    padding: 5rem 7rem;
+    border-radius: 55px;
+    line-height: 2rem;
+}
+
+.body-content>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+/* -----------------------------------------------HEADSHOT------------------------------------------------- */
+
+.headshot {
+    margin: 0 auto 4rem auto;
+    display: flex;
+}
+
+.headshot>img {
+    width: auto;
+    height: 350px;
+    border-radius: 40px;
+}
+
+.headshot-img {
+    margin-left: -4rem;
+    z-index: 1;
+}
+
+.headshot-under {
+    filter: opacity(.5);
+}
+
+/* -------------------------------------------------ABOUT-------------------------------------------------- */
+
+.about-bio>a {
+    background-color: #FADADD;
+    text-decoration: underline;
+    color: black;
+}
+
+.about-bio>a:hover {
+    filter: saturate(2);
+    color: gray;
+    transition: color 0.3s ease;
+}
+
+/* -----------------------------------------------PROJECTS------------------------------------------------- */
+
+.project-card {
+    width: 25rem;
+    position: relative;
+}
+
+.project-img {
+    width: 100%;
+    height: auto;
+    border-radius: 45px;
+}
+
+/* just blur the project-image instead of using backdrop-filter */
+
+.project-desc {
+    background-color: white;
+    width: 100%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    opacity: .5;
+    backdrop-filter: blur(20px);
+
+    border-radius: 0 0 45px 45px;
+}
