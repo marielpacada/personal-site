@@ -2,8 +2,9 @@ import React from "react";
 
 function MusingContent(props) {
     return (
-        <div className="note-content hidden" id={"content-".concat(props.id)}>
-            {props.text}
+        <div className="my-col note-content hidden" id={"content-".concat(props.id)}>
+            <div className="content-title">{props.title}</div>
+            <div>{props.text}</div>
         </div>
     );
 }

@@ -17,6 +17,7 @@ const myMusings =
                                 id={note.key}
                                 title={note.title}
                                 date={note.date}
+                                time={note.time}
                                 subheading={note.subheading}
                             />
                         );
@@ -31,6 +32,7 @@ const myMusings =
                                 key={note.key}
                                 id={note.key}
                                 text={note.text}
+                                title={note.title}
                             />
                         );
                     })}
