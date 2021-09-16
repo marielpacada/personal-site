@@ -69,16 +69,24 @@ $(function () {
         "border-radius": "25px 0 0 0"
     });
 
-    $(".note-file-div").on("click", function () {
+    $(".note-file").on("click", function () {
 
-        // note content should show
-        // which means we remove the hidden class and add the shown class
-        // how do we get the corresponding one?
-        // we get the sibling with next, and we get the first child 
-        // we can use slice like last time :)
+        // this has to happen for each note content
+        $(".note-content").each(
+            function () {
+                // all note content start with hidden class
+                // if the hidden class was removed, add it again to hide
+                !$(this).hasClass("hidden") && $(this).addClass("hidden");
+                // if shown class was added, remove it to hide
+                $(this).removeClass("shown");
+            }
+        );
 
-        // clear the div first and then show :)
-        $(".note-content").children().css({ "display": "none" });
+        const fileKey = $(this).attr("id").slice(-1);
+        const contentId = "#content-".concat(fileKey);
+
+        $(contentId).removeClass("hidden");
+        $(contentId).addClass("shown");
     });
 
 

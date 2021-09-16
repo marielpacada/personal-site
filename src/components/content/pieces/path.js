@@ -16,9 +16,9 @@ const path =
             experiences.
             <br />
             <br />
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/spLo7hHzCCg" frameborder="0"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/spLo7hHzCCg" frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen id="video" title="define your own love"></iframe>
+                allowFullScreen id="video" title="define your own love"></iframe>
             <br />
             <i>The video for which I’d eventually asked my friends to summarize our talks,
                 effectively doing a third of the intellectual work for this project :) Thanks, guys!</i>

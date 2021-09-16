@@ -4,16 +4,17 @@ import MusingFile from './MusingFile';
 import musings from "../content/musings";
 import MusingContent from './MusingContent';
 
-
 const myMusings =
     <>
         <div className="content-body my-row center-align">
-            <div className="note-app my-row start-align">
+            <div className="note-app my-row center-align">
                 <div className="note-file-div my-col start-align">
+                    {/* note-file */}
                     {musings.map((note) => {
                         return (
                             <MusingFile
                                 key={note.key}
+                                id={note.key}
                                 title={note.title}
                                 date={note.date}
                                 subheading={note.subheading}
@@ -23,9 +24,14 @@ const myMusings =
                 </div>
 
                 <div className="note-content-div">
+                    {/* note-content */}
                     {musings.map((note) => {
                         return (
-                            <MusingContent text={note.text} />
+                            <MusingContent
+                                key={note.key}
+                                id={note.key}
+                                text={note.text}
+                            />
                         );
                     })}
                 </div>
