@@ -6,7 +6,7 @@ import projects from "../content/projects";
 
 const myProjects =
     <>
-        <div className="project-tag-div">
+        <div className="project-tag-div my-row start-center-align">
             <ProjectTag tag="product" />
             <ProjectTag tag="development" />
             <ProjectTag tag="design" />

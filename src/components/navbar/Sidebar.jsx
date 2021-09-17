@@ -4,8 +4,8 @@ import NavPortrait from "./NavPortrait";
 
 function Sidebar() {
     return (
-        <div className="">
-            <div className="my-col start-center-align sidebar">
+        <>
+            <div className="sidebar my-col start-center-align">
                 <NavPortrait />
                 <NavButton iconName="user-circle" tabName="about" />
                 <NavButton iconName="laptop-code" tabName="projects" />
@@ -13,7 +13,7 @@ function Sidebar() {
                 <NavButton iconName="id-card" tabName="contact" />
             </div>
             <div className="footer">© 2021 mariel pacada</div>
-        </div>
+        </>
 
     );
 }

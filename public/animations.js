@@ -1,36 +1,44 @@
 /* eslint-env jquery */
 $(function () {
 
-    $(".project-cover").on({
-        mouseenter: function () {
-            colorizeBackground($(this));
-            hideEmoji($(this.firstChild));
-            showDescription($(this.lastChild));
-        },
-        mouseleave: function () {
-            decolorizeBackground($(this));
-            showEmoji($(this.firstChild));
-            hideDescription($(this.lastChild));
-        }
-    });
+    var tap = ("ontouchstart" in document.documentElement);
+    if (!tap) {
+        $(".project-cover").on({
+            mouseenter: function () {
+                colorizeBackground($(this));
+                hideEmoji($(this.firstChild));
+                showDescription($(this.lastChild));
+            },
+            mouseleave: function () {
+                decolorizeBackground($(this));
+                showEmoji($(this.firstChild));
+                hideDescription($(this.lastChild));
+            }
+        });
 
-    /**
-     * This allows the hover effect to work for the project-cover when hovering over the title div
-     */
-    $(".project-title-div").on({
-        mouseenter: function () {
-            const cover = $(this).next(); // project-cover
-            colorizeBackground(cover);
-            hideEmoji(cover.children().slice(0, 1)); // project-emoji
-            showDescription(cover.children().slice(1)); // project-desc
-        },
-        mouseleave: function () {
-            const cover = $(this).next();
-            decolorizeBackground(cover);
-            showEmoji(cover.children().slice(0, 1));
-            hideDescription(cover.children().slice(1));
-        }
-    });
+        /**
+         * This allows the hover effect to work for the project-cover when hovering over the title div
+         */
+        $(".project-title-div").on({
+            mouseenter: function () {
+                const cover = $(this).next(); // project-cover
+                colorizeBackground(cover);
+                hideEmoji(cover.children().slice(0, 1)); // project-emoji
+                showDescription(cover.children().slice(1)); // project-desc
+            },
+            mouseleave: function () {
+                const cover = $(this).next();
+                decolorizeBackground(cover);
+                showEmoji(cover.children().slice(0, 1));
+                hideDescription(cover.children().slice(1));
+            }
+        });
+    }
+
+    if (tap) {
+        colorizeBackground($(".project-cover"));
+    }
+
 
     function colorizeBackground(obj) {
         obj.css({ "background-color": obj.attr("my-color"), "opacity": 1 });
