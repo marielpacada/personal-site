@@ -37,27 +37,6 @@ html {
     position: relative;
 }
 
-/* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
-
-@media (max-width: 1520px) {
-    .app {
-        width: 100vw;
-        padding: 4.5rem;
-    }
-    .sidebar {
-        width: 18rem;
-        height: 80vh;
-    }
-    /* calc(viewport - sidebar - padding both sides - space between sidebar and card) */
-    .home-card {
-        width: calc(100vw - 18rem - 10rem - 2.5rem);
-        height: 80vh;
-    }
-    .body-card {
-        width: calc(100vw - 18rem - 10rem - 2.5rem);
-    }
-}
-
 /* ----------------------------------------------ROW AND COL----------------------------------------------- */
 
 .my-row {
@@ -210,6 +189,7 @@ html {
 .home-card {
     position: absolute;
     right: 5rem;
+    text-align: center;
 }
 
 .home-card>div {
@@ -260,6 +240,7 @@ html {
 .byline {
     font-size: 1.2rem;
     font-family: Courier, sans-serif;
+    padding: 1rem;
 }
 
 .byline>p>a {
@@ -316,7 +297,7 @@ html {
     border-radius: 40px;
 }
 
-.headshot-img {
+.headshot-img-landscape, .headshot-img-portrait {
     margin-left: -4rem;
     z-index: 1;
 }
@@ -387,6 +368,7 @@ html {
     height: auto;
     width: 100%;
     padding: 0 3rem 1rem;
+    flex-wrap: wrap;
 }
 
 .project-title-div {
@@ -501,6 +483,8 @@ html {
     height: calc(80vh - 8.3rem);
 }
 
+/* -----------------------------------------------NOTE FILE------------------------------------------------ */
+
 .note-file-div {
     background-color: rgba(255, 255, 255, .20);
     height: 100%;
@@ -519,6 +503,31 @@ html {
     transition: 0.25s ease;
     overflow-y: scroll;
 }
+
+.note-file:hover {
+    background-color: rgba(255, 255, 255, .70);
+}
+
+.file-title {
+    font-family: "montserrat", sans-serif;
+    font-size: 1rem;
+    margin-bottom: .25rem;
+}
+
+.file-subheading {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: .8rem;
+    font-style: italic;
+}
+
+.file-date {
+    font-family: "montserrat-regular", sans-serif;
+    font-size: .7rem;
+    color: #5c5b58;
+    margin-bottom: .7rem;
+}
+
+/* ---------------------------------------------NOTE CONTENT----------------------------------------------- */
 
 .note-content-div {
     background-color: rgba(255, 255, 255, .10);
@@ -553,25 +562,93 @@ html {
     display: none;
 }
 
-.note-file:hover {
-    background-color: rgba(255, 255, 255, .70);
+/* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
+
+@media (min-width: 1340px) and (min-height: 800px) {
+    .app {
+        width: 100vw;
+        padding: 4.5rem;
+    }
+    .sidebar {
+        width: 18rem;
+        height: 80vh;
+    }
+    /* calc(viewport - sidebar - padding both sides - space between sidebar and card) */
+    .home-card {
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
+        height: 80vh;
+    }
+    .body-card {
+        width: calc(100vw - 18rem - 10rem - 2.5rem);
+    }
+    .headshot-img-portrait {
+        display: none;
+    }
 }
 
-.file-title {
-    font-family: "montserrat", sans-serif;
-    font-size: 1rem;
-    margin-bottom: .25rem;
-}
+/* --------------------------------------------TABLET DISPLAY---------------------------------------------- */
 
-.file-subheading {
-    font-family: "montserrat-regular", sans-serif;
-    font-size: .8rem;
-    font-style: italic;
-}
-
-.file-date {
-    font-family: "montserrat-regular", sans-serif;
-    font-size: .7rem;
-    color: #5c5b58;
-    margin-bottom: .7rem;
+@media (max-width: 1339px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .sidebar {
+        background-color: rgba(255, 255, 255, 0);
+        display: flex;
+        flex-direction: row;
+        height: 10rem;
+        position: relative;
+    }
+    .portrait {
+        width: 120px;
+        height: auto;
+    }
+    .nav-button {
+        color: white;
+    }
+    .footer {
+        display: none;
+    }
+    .home-card {
+        width: calc(100vw - 8rem);
+        height: 60vh;
+        right: auto;
+        left: auto;
+        top: 13rem;
+    }
+    .body-card {
+        width: calc(100vw - 5rem);
+        top: 13rem;
+        right: 2rem;
+    }
+    .type-head {
+        height: 120px;
+    }
+    .flower-symbol {
+        margin-top: 0;
+    }
+    .headshot-img-landscape {
+        display: none;
+    }
+    .about-content {
+        padding: 4rem 3rem;
+    }
+    .project-dot-div {
+        width: 30%;
+    }
+    .project-title {
+        width: 70%;
+        font-size: 1.3rem;
+    }
+    .project-emoji {
+        opacity: 0;
+    }
+    .project-desc {
+        opacity: 1;
+        width: 13rem;
+    }
 }
