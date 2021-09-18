@@ -36,7 +36,12 @@ $(function () {
     }
 
     if (tap) {
-        colorizeBackground($(".project-cover"));
+        $(".project-cover").each(function () {
+            colorizeBackground($(this));
+        });
+
+        $(".project-emoji").css({ "opacity": "0" });
+        $(".project-desc").css({ "opacity": "1" });
     }
 
 
