@@ -5,7 +5,7 @@ import contactLinks from "../content/contact";
 
 const myContactLinks =
     <>
-        <div className="my-row even-space-align">
+        <div className="content-body my-row even-space-align">
             {contactLinks.map((contact) => {
                 return (
                     <ContactIcon
@@ -19,11 +19,9 @@ const myContactLinks =
                 )
             })}
         </div>
-    </>
+    </>;
 
-
-
-function About() {
+function Contact() {
     return (
         <div>
             <BodyCard greeting="let's connect!" html={myContactLinks} />
@@ -31,4 +29,4 @@ function About() {
     );
 }
 
-export default About;
+export default Contact;

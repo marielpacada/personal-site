@@ -466,6 +466,11 @@ html {
     transition: opacity .3s ease;
 }
 
+.contact-icon-div {
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+
 .contact-icon:hover {
     cursor: pointer;
     opacity: .5;
@@ -608,6 +613,7 @@ html {
         height: auto;
     }
     .nav-button {
+        margin-top: 2rem;
         color: white;
     }
     .footer {
@@ -650,5 +656,21 @@ html {
     .project-desc {
         opacity: 1;
         width: 13rem;
+    }
+    .note-file {
+        height: 10rem;
+    }
+    .note-app {
+        height: 55vh;
+    }
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1339px) and (max-height: 903px) {
+    .type-head {
+        height: 60px;
     }
 }
