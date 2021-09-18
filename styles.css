@@ -678,7 +678,6 @@ html {
 
 @media (max-width: 760px) {
     .sidebar {
-        width: 100vw;
         height: 7rem;
         display: flex;
         flex-direction: row;
@@ -774,8 +773,15 @@ html {
         justify-content: center;
         align-items: center;
     }
+    .project-cover {
+        height: 10rem;
+    }
     .project-card {
-        width: 88%;
+        margin: 1.2rem 0;
+        width: 82%;
+    }
+    .project-desc {
+        font-size: 0.8rem;
     }
     .note-app {
         flex-direction: column;
@@ -796,9 +802,8 @@ html {
     }
     .note-file {
         display: inline-block;
-        height: 6rem;
         width: 10rem;
-        padding: .7rem 1rem;
+        padding: .75rem 1rem 0;
         border-bottom: none;
         border-right: 1px dashed #73726e;
     }
@@ -811,6 +816,8 @@ html {
         display: none;
     }
     .file-date {
+        position: relative;
         font-size: .6rem;
+        top: .75rem;
     }
 }
