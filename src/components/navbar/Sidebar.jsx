@@ -14,7 +14,6 @@ function Sidebar() {
             </div>
             <div className="footer">© 2021 mariel pacada</div>
         </>
-
     );
 }
 

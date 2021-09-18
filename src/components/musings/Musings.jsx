@@ -8,7 +8,7 @@ const myMusings =
     <>
         <div className="content-body my-row center-align">
             <div className="note-app my-row center-align">
-                <div className="note-file-div my-col start-align">
+                <div className="note-file-div">
                     {/* note-file */}
                     {musings.map((note) => {
                         return (
