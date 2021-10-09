@@ -568,7 +568,7 @@ html {
 
 /* --------------------------------------------LAPTOP DISPLAY---------------------------------------------- */
 
-@media (min-width: 1340px) and (min-height: 800px) {
+@media (min-width: 1025px) and (min-height: 761px) {
     .app {
         width: 100vw;
         padding: 4.5rem;
@@ -592,7 +592,7 @@ html {
 
 /* --------------------------------------------TABLET DISPLAY---------------------------------------------- */
 
-@media (max-width: 1339px) {
+@media (max-width: 1024px) {
     .app {
         display: flex;
         flex-direction: column;
@@ -670,7 +670,7 @@ html {
 
 /* tablet landscape tweaks */
 
-@media (max-width: 1339px) and (max-height: 903px) {
+@media (max-width: 1024px) and (max-height: 903px) {
     .type-head {
         height: 60px;
     }
