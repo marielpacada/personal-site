@@ -23,7 +23,7 @@ const contactLinks = [
     icon: "fas fa-file-alt",
     color: "#967bb6",
     iconColor: "white",
-    url: "resume.pdf",
+    url: "mariel_pacada_resume.pdf",
   },
 ];
 

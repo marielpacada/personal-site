@@ -27,7 +27,7 @@ const projects = [
     emoji: "🌺",
     color: "#E58AA5",
     tags: ["design"],
-    url: "https://radiant-brushlands-46105.herokuapp.com/",
+    url: "https://marielpacada.github.io/redesign-writeup/",
     description:
       "A complete redesign of website ukutabs.com, improving usability and accessibility",
   },
