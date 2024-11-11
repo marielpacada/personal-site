@@ -12,7 +12,7 @@ function Sidebar() {
         <NavButton iconName="comment-dots" tabName="musings" />
         <NavButton iconName="id-card" tabName="contact" />
       </div>
-      <div className="footer">© 2023 mariel pacada</div>
+      <div className="footer">© 2024 mariel pacada</div>
     </>
   );
 }
