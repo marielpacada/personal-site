@@ -45,8 +45,12 @@ function HomeCard() {
 
       <div className="home-bottom my-row center-align">
         <div className="byline">
-          {/* <p>current: <a href="https://cs.brown.edu/" target="_blank" rel="noreferrer">brown</a> computer science</p> */}
-          <p>currently looking for fullstack swe roles!</p>
+          <p>
+            swe @{" "}
+            <a href="https://forio.com/" target="_blank" rel="noreferrer">
+              forio
+            </a>
+          </p>
         </div>
       </div>
     </div>
